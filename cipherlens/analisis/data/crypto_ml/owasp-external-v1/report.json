@@ -1,0 +1,6991 @@
+{
+  "source": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+  "revision": "10dfcc54ad02dcfcb358b0ba4a0fef8c919a6d17",
+  "modelVersion": "1ec3a4d2f83343c2",
+  "modelSha256": "27a2bc30d276b2120031a95cdcb69e0f2dc755dd93ff0e6d47324b321131976b",
+  "trainingPerformed": false,
+  "thresholdChanged": false,
+  "selectedRows": 975,
+  "excluded": [],
+  "labels": {
+    "1": 477,
+    "0": 498
+  },
+  "overall": {
+    "size": 950,
+    "classificationReport": {
+      "no_target_misuse": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 498.0
+      },
+      "target_misuse": {
+        "precision": 0.47578947368421054,
+        "recall": 1.0,
+        "f1-score": 0.644793152639087,
+        "support": 452.0
+      },
+      "accuracy": 0.47578947368421054,
+      "macro avg": {
+        "precision": 0.23789473684210527,
+        "recall": 0.5,
+        "f1-score": 0.3223965763195435,
+        "support": 950.0
+      },
+      "weighted avg": {
+        "precision": 0.2263756232686981,
+        "recall": 0.47578947368421054,
+        "f1-score": 0.306785794729334,
+        "support": 950.0
+      }
+    },
+    "confusionMatrix": [
+      [
+        0,
+        498
+      ],
+      [
+        0,
+        452
+      ]
+    ],
+    "balancedAccuracy": 0.5
+  },
+  "byCategory": {
+    "crypto": {
+      "size": 246,
+      "classificationReport": {
+        "no_target_misuse": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 116.0
+        },
+        "target_misuse": {
+          "precision": 0.5284552845528455,
+          "recall": 1.0,
+          "f1-score": 0.6914893617021277,
+          "support": 130.0
+        },
+        "accuracy": 0.5284552845528455,
+        "macro avg": {
+          "precision": 0.26422764227642276,
+          "recall": 0.5,
+          "f1-score": 0.34574468085106386,
+          "support": 246.0
+        },
+        "weighted avg": {
+          "precision": 0.27926498777182895,
+          "recall": 0.5284552845528455,
+          "f1-score": 0.36542120740356343,
+          "support": 246.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          0,
+          116
+        ],
+        [
+          0,
+          130
+        ]
+      ],
+      "balancedAccuracy": 0.5
+    },
+    "hash": {
+      "size": 236,
+      "classificationReport": {
+        "no_target_misuse": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 107.0
+        },
+        "target_misuse": {
+          "precision": 0.5466101694915254,
+          "recall": 1.0,
+          "f1-score": 0.7068493150684931,
+          "support": 129.0
+        },
+        "accuracy": 0.5466101694915254,
+        "macro avg": {
+          "precision": 0.2733050847457627,
+          "recall": 0.5,
+          "f1-score": 0.35342465753424657,
+          "support": 236.0
+        },
+        "weighted avg": {
+          "precision": 0.2987826773915542,
+          "recall": 0.5466101694915254,
+          "f1-score": 0.3863710239145577,
+          "support": 236.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          0,
+          107
+        ],
+        [
+          0,
+          129
+        ]
+      ],
+      "balancedAccuracy": 0.5
+    },
+    "weakrand": {
+      "size": 468,
+      "classificationReport": {
+        "no_target_misuse": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 275.0
+        },
+        "target_misuse": {
+          "precision": 0.41239316239316237,
+          "recall": 1.0,
+          "f1-score": 0.583963691376702,
+          "support": 193.0
+        },
+        "accuracy": 0.41239316239316237,
+        "macro avg": {
+          "precision": 0.20619658119658119,
+          "recall": 0.5,
+          "f1-score": 0.291981845688351,
+          "support": 468.0
+        },
+        "weighted avg": {
+          "precision": 0.1700681203886332,
+          "recall": 0.41239316239316237,
+          "f1-score": 0.24082263340962284,
+          "support": 468.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          0,
+          275
+        ],
+        [
+          0,
+          193
+        ]
+      ],
+      "balancedAccuracy": 0.5
+    }
+  },
+  "predictions": [
+    {
+      "id": "BenchmarkTest00003",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6097133826483797
+    },
+    {
+      "id": "BenchmarkTest00005",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6141580677294506
+    },
+    {
+      "id": "BenchmarkTest00009",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5905079976179874
+    },
+    {
+      "id": "BenchmarkTest00010",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6104421111204436
+    },
+    {
+      "id": "BenchmarkTest00019",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6354918721423339
+    },
+    {
+      "id": "BenchmarkTest00020",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6132277941689431
+    },
+    {
+      "id": "BenchmarkTest00022",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.587390771714185
+    },
+    {
+      "id": "BenchmarkTest00023",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6171274525745507
+    },
+    {
+      "id": "BenchmarkTest00029",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6095633970852024
+    },
+    {
+      "id": "BenchmarkTest00035",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6341686345956734
+    },
+    {
+      "id": "BenchmarkTest00042",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6085188610706475
+    },
+    {
+      "id": "BenchmarkTest00046",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6007936394380919
+    },
+    {
+      "id": "BenchmarkTest00050",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6168631188295458
+    },
+    {
+      "id": "BenchmarkTest00053",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6139895013815152
+    },
+    {
+      "id": "BenchmarkTest00054",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6127580151314028
+    },
+    {
+      "id": "BenchmarkTest00055",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6151048576572872
+    },
+    {
+      "id": "BenchmarkTest00056",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6113868715684214
+    },
+    {
+      "id": "BenchmarkTest00057",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6138409983668335
+    },
+    {
+      "id": "BenchmarkTest00058",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.621331806790315
+    },
+    {
+      "id": "BenchmarkTest00059",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6256203478563362
+    },
+    {
+      "id": "BenchmarkTest00069",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5883596545349487
+    },
+    {
+      "id": "BenchmarkTest00070",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5977036290433416
+    },
+    {
+      "id": "BenchmarkTest00071",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5966187419804811
+    },
+    {
+      "id": "BenchmarkTest00072",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6017638256607183
+    },
+    {
+      "id": "BenchmarkTest00073",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6048238085115102
+    },
+    {
+      "id": "BenchmarkTest00074",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6160757025830563
+    },
+    {
+      "id": "BenchmarkTest00075",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6085938847448499
+    },
+    {
+      "id": "BenchmarkTest00076",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6109587664004374
+    },
+    {
+      "id": "BenchmarkTest00078",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.615483741265483
+    },
+    {
+      "id": "BenchmarkTest00079",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6208264050539363
+    },
+    {
+      "id": "BenchmarkTest00080",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6187952761017012
+    },
+    {
+      "id": "BenchmarkTest00081",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6177430924600299
+    },
+    {
+      "id": "BenchmarkTest00082",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6166448723231875
+    },
+    {
+      "id": "BenchmarkTest00083",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6121738990416082
+    },
+    {
+      "id": "BenchmarkTest00084",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6221002970379879
+    },
+    {
+      "id": "BenchmarkTest00085",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6250606960892655
+    },
+    {
+      "id": "BenchmarkTest00086",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6169336487618703
+    },
+    {
+      "id": "BenchmarkTest00094",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.61332112079015
+    },
+    {
+      "id": "BenchmarkTest00095",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6122315038882433
+    },
+    {
+      "id": "BenchmarkTest00096",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6044250667892441
+    },
+    {
+      "id": "BenchmarkTest00119",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6241566003687123
+    },
+    {
+      "id": "BenchmarkTest00120",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6056074221356983
+    },
+    {
+      "id": "BenchmarkTest00121",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6112545017947175
+    },
+    {
+      "id": "BenchmarkTest00122",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6096927478821379
+    },
+    {
+      "id": "BenchmarkTest00123",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6183521787137096
+    },
+    {
+      "id": "BenchmarkTest00124",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6136439701436904
+    },
+    {
+      "id": "BenchmarkTest00125",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6183521787137096
+    },
+    {
+      "id": "BenchmarkTest00126",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.617391610325145
+    },
+    {
+      "id": "BenchmarkTest00127",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6231221524794608
+    },
+    {
+      "id": "BenchmarkTest00128",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6217965742591922
+    },
+    {
+      "id": "BenchmarkTest00129",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6283327298486684
+    },
+    {
+      "id": "BenchmarkTest00130",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6243347854025756
+    },
+    {
+      "id": "BenchmarkTest00141",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5760771607581893
+    },
+    {
+      "id": "BenchmarkTest00142",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5814367536554598
+    },
+    {
+      "id": "BenchmarkTest00143",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6071483672416489
+    },
+    {
+      "id": "BenchmarkTest00160",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6152648569488763
+    },
+    {
+      "id": "BenchmarkTest00161",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6215462069637805
+    },
+    {
+      "id": "BenchmarkTest00162",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.616021124608365
+    },
+    {
+      "id": "BenchmarkTest00163",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6124466220342836
+    },
+    {
+      "id": "BenchmarkTest00164",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6098632881001996
+    },
+    {
+      "id": "BenchmarkTest00165",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5961996584250275
+    },
+    {
+      "id": "BenchmarkTest00166",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6211120009519417
+    },
+    {
+      "id": "BenchmarkTest00167",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6182409481518458
+    },
+    {
+      "id": "BenchmarkTest00168",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6175365895843388
+    },
+    {
+      "id": "BenchmarkTest00178",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6104802615398776
+    },
+    {
+      "id": "BenchmarkTest00179",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6038626150602547
+    },
+    {
+      "id": "BenchmarkTest00180",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6023477810840578
+    },
+    {
+      "id": "BenchmarkTest00181",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6038626150602547
+    },
+    {
+      "id": "BenchmarkTest00182",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.619416909805905
+    },
+    {
+      "id": "BenchmarkTest00183",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6008053346588786
+    },
+    {
+      "id": "BenchmarkTest00184",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6092349368678112
+    },
+    {
+      "id": "BenchmarkTest00185",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6106979008285746
+    },
+    {
+      "id": "BenchmarkTest00186",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.619781066782242
+    },
+    {
+      "id": "BenchmarkTest00187",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6078066962265725
+    },
+    {
+      "id": "BenchmarkTest00188",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6030774464567521
+    },
+    {
+      "id": "BenchmarkTest00208",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6169152377131759
+    },
+    {
+      "id": "BenchmarkTest00209",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6258598664031695
+    },
+    {
+      "id": "BenchmarkTest00210",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6068787527794908
+    },
+    {
+      "id": "BenchmarkTest00211",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6246412675650599
+    },
+    {
+      "id": "BenchmarkTest00212",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6235973391932363
+    },
+    {
+      "id": "BenchmarkTest00213",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6335546354392158
+    },
+    {
+      "id": "BenchmarkTest00214",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6331429109456692
+    },
+    {
+      "id": "BenchmarkTest00223",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5977361068456051
+    },
+    {
+      "id": "BenchmarkTest00224",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5920218758172543
+    },
+    {
+      "id": "BenchmarkTest00225",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5944054413834433
+    },
+    {
+      "id": "BenchmarkTest00226",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6228567679849064
+    },
+    {
+      "id": "BenchmarkTest00227",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6284662174996289
+    },
+    {
+      "id": "BenchmarkTest00228",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6183082244018858
+    },
+    {
+      "id": "BenchmarkTest00229",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6183977726963924
+    },
+    {
+      "id": "BenchmarkTest00230",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6080395527162531
+    },
+    {
+      "id": "BenchmarkTest00231",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6267288594259343
+    },
+    {
+      "id": "BenchmarkTest00232",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.62777871226203
+    },
+    {
+      "id": "BenchmarkTest00233",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6279940126114905
+    },
+    {
+      "id": "BenchmarkTest00234",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6295286465914158
+    },
+    {
+      "id": "BenchmarkTest00235",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6296160280050225
+    },
+    {
+      "id": "BenchmarkTest00236",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6198238009868519
+    },
+    {
+      "id": "BenchmarkTest00237",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.624165258222665
+    },
+    {
+      "id": "BenchmarkTest00238",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6261064501566855
+    },
+    {
+      "id": "BenchmarkTest00239",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6378642262377682
+    },
+    {
+      "id": "BenchmarkTest00240",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6331357861233459
+    },
+    {
+      "id": "BenchmarkTest00243",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6222539896229471
+    },
+    {
+      "id": "BenchmarkTest00244",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6129577934783952
+    },
+    {
+      "id": "BenchmarkTest00245",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6281190319719041
+    },
+    {
+      "id": "BenchmarkTest00246",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6016907783783908
+    },
+    {
+      "id": "BenchmarkTest00247",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6009034002614996
+    },
+    {
+      "id": "BenchmarkTest00248",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6197640047523537
+    },
+    {
+      "id": "BenchmarkTest00249",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6197640047523537
+    },
+    {
+      "id": "BenchmarkTest00254",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6154279536992481
+    },
+    {
+      "id": "BenchmarkTest00255",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5992280747200217
+    },
+    {
+      "id": "BenchmarkTest00256",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6168104218505303
+    },
+    {
+      "id": "BenchmarkTest00257",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6150804649240528
+    },
+    {
+      "id": "BenchmarkTest00258",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.617166415949688
+    },
+    {
+      "id": "BenchmarkTest00259",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6226254855002261
+    },
+    {
+      "id": "BenchmarkTest00260",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6244972104418719
+    },
+    {
+      "id": "BenchmarkTest00266",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5923293301179109
+    },
+    {
+      "id": "BenchmarkTest00267",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5851517689919742
+    },
+    {
+      "id": "BenchmarkTest00268",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5945292376447195
+    },
+    {
+      "id": "BenchmarkTest00269",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5923525491123836
+    },
+    {
+      "id": "BenchmarkTest00270",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5975952821886055
+    },
+    {
+      "id": "BenchmarkTest00271",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6133570851909486
+    },
+    {
+      "id": "BenchmarkTest00272",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.605241939944242
+    },
+    {
+      "id": "BenchmarkTest00273",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6145411002094997
+    },
+    {
+      "id": "BenchmarkTest00274",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6142402931055698
+    },
+    {
+      "id": "BenchmarkTest00296",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6153946026741078
+    },
+    {
+      "id": "BenchmarkTest00297",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6226865430833151
+    },
+    {
+      "id": "BenchmarkTest00298",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6161945852197219
+    },
+    {
+      "id": "BenchmarkTest00299",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6226371532823685
+    },
+    {
+      "id": "BenchmarkTest00312",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6112849085840258
+    },
+    {
+      "id": "BenchmarkTest00313",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6160886534616459
+    },
+    {
+      "id": "BenchmarkTest00314",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5961155680794933
+    },
+    {
+      "id": "BenchmarkTest00315",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6099471415746683
+    },
+    {
+      "id": "BenchmarkTest00316",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6221945073427749
+    },
+    {
+      "id": "BenchmarkTest00317",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6112849085840258
+    },
+    {
+      "id": "BenchmarkTest00318",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6225846301619513
+    },
+    {
+      "id": "BenchmarkTest00319",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6102524336640467
+    },
+    {
+      "id": "BenchmarkTest00320",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6102966150695509
+    },
+    {
+      "id": "BenchmarkTest00345",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6278290357132995
+    },
+    {
+      "id": "BenchmarkTest00346",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5856541163700413
+    },
+    {
+      "id": "BenchmarkTest00347",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6297048021436205
+    },
+    {
+      "id": "BenchmarkTest00349",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.608677152906007
+    },
+    {
+      "id": "BenchmarkTest00350",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6285100834401084
+    },
+    {
+      "id": "BenchmarkTest00351",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6181382470036901
+    },
+    {
+      "id": "BenchmarkTest00352",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6347838996469722
+    },
+    {
+      "id": "BenchmarkTest00353",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6307508520704221
+    },
+    {
+      "id": "BenchmarkTest00354",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6300939444757855
+    },
+    {
+      "id": "BenchmarkTest00355",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6407771879267241
+    },
+    {
+      "id": "BenchmarkTest00356",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6290500565707097
+    },
+    {
+      "id": "BenchmarkTest00357",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6301712111452168
+    },
+    {
+      "id": "BenchmarkTest00358",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6271712009143735
+    },
+    {
+      "id": "BenchmarkTest00370",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5746053859125708
+    },
+    {
+      "id": "BenchmarkTest00371",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5887273046863787
+    },
+    {
+      "id": "BenchmarkTest00372",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5974845713431993
+    },
+    {
+      "id": "BenchmarkTest00373",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5834470575872569
+    },
+    {
+      "id": "BenchmarkTest00374",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6155487352004982
+    },
+    {
+      "id": "BenchmarkTest00397",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.614859755889842
+    },
+    {
+      "id": "BenchmarkTest00398",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6248543421444938
+    },
+    {
+      "id": "BenchmarkTest00399",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6317874209806738
+    },
+    {
+      "id": "BenchmarkTest00400",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6178049687223487
+    },
+    {
+      "id": "BenchmarkTest00401",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6153785191178989
+    },
+    {
+      "id": "BenchmarkTest00402",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6059330431085516
+    },
+    {
+      "id": "BenchmarkTest00413",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6063068471263069
+    },
+    {
+      "id": "BenchmarkTest00414",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6097934302699093
+    },
+    {
+      "id": "BenchmarkTest00415",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6069998556193368
+    },
+    {
+      "id": "BenchmarkTest00416",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6063068471263069
+    },
+    {
+      "id": "BenchmarkTest00417",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5948024441473512
+    },
+    {
+      "id": "BenchmarkTest00418",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5984980261695027
+    },
+    {
+      "id": "BenchmarkTest00419",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6069998556193368
+    },
+    {
+      "id": "BenchmarkTest00420",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5976499041465915
+    },
+    {
+      "id": "BenchmarkTest00421",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6040348428018978
+    },
+    {
+      "id": "BenchmarkTest00422",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6042252681108161
+    },
+    {
+      "id": "BenchmarkTest00423",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6139812652437787
+    },
+    {
+      "id": "BenchmarkTest00443",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6094635947858957
+    },
+    {
+      "id": "BenchmarkTest00444",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6204956277700472
+    },
+    {
+      "id": "BenchmarkTest00445",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6296753411263031
+    },
+    {
+      "id": "BenchmarkTest00446",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.615987032520052
+    },
+    {
+      "id": "BenchmarkTest00447",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6208929315273279
+    },
+    {
+      "id": "BenchmarkTest00448",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6271713069672136
+    },
+    {
+      "id": "BenchmarkTest00449",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6166135751161796
+    },
+    {
+      "id": "BenchmarkTest00450",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6369895155634593
+    },
+    {
+      "id": "BenchmarkTest00451",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6246257140318234
+    },
+    {
+      "id": "BenchmarkTest00462",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5855534712431619
+    },
+    {
+      "id": "BenchmarkTest00463",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5855722655380927
+    },
+    {
+      "id": "BenchmarkTest00464",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5772447177493367
+    },
+    {
+      "id": "BenchmarkTest00465",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5827602930989217
+    },
+    {
+      "id": "BenchmarkTest00466",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6161045295670212
+    },
+    {
+      "id": "BenchmarkTest00482",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6198029789405183
+    },
+    {
+      "id": "BenchmarkTest00483",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6139664548681171
+    },
+    {
+      "id": "BenchmarkTest00484",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6116589389733859
+    },
+    {
+      "id": "BenchmarkTest00485",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6226472967247273
+    },
+    {
+      "id": "BenchmarkTest00486",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6188193738269365
+    },
+    {
+      "id": "BenchmarkTest00487",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6246709965727505
+    },
+    {
+      "id": "BenchmarkTest00488",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6226196682348776
+    },
+    {
+      "id": "BenchmarkTest00489",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6277593664083669
+    },
+    {
+      "id": "BenchmarkTest00490",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6139550757130847
+    },
+    {
+      "id": "BenchmarkTest00501",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6015085157030049
+    },
+    {
+      "id": "BenchmarkTest00502",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6158884319325956
+    },
+    {
+      "id": "BenchmarkTest00503",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6010620274153464
+    },
+    {
+      "id": "BenchmarkTest00504",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6063217632634263
+    },
+    {
+      "id": "BenchmarkTest00505",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6113707520281955
+    },
+    {
+      "id": "BenchmarkTest00506",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6234362691513453
+    },
+    {
+      "id": "BenchmarkTest00507",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6035059363400921
+    },
+    {
+      "id": "BenchmarkTest00521",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6158730003960017
+    },
+    {
+      "id": "BenchmarkTest00522",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6151450949410451
+    },
+    {
+      "id": "BenchmarkTest00523",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6334065617466808
+    },
+    {
+      "id": "BenchmarkTest00524",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6377951074051823
+    },
+    {
+      "id": "BenchmarkTest00531",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5950039671896767
+    },
+    {
+      "id": "BenchmarkTest00532",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.617341903711309
+    },
+    {
+      "id": "BenchmarkTest00533",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5988448071557877
+    },
+    {
+      "id": "BenchmarkTest00534",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6004416425584629
+    },
+    {
+      "id": "BenchmarkTest00535",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5932282030450411
+    },
+    {
+      "id": "BenchmarkTest00536",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.613814556023715
+    },
+    {
+      "id": "BenchmarkTest00537",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6095950702794656
+    },
+    {
+      "id": "BenchmarkTest00538",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.615816148531584
+    },
+    {
+      "id": "BenchmarkTest00539",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5944402245655398
+    },
+    {
+      "id": "BenchmarkTest00540",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6107649761567692
+    },
+    {
+      "id": "BenchmarkTest00560",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6147486041896947
+    },
+    {
+      "id": "BenchmarkTest00561",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6205373901118905
+    },
+    {
+      "id": "BenchmarkTest00562",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6189464781410949
+    },
+    {
+      "id": "BenchmarkTest00563",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6221251067003908
+    },
+    {
+      "id": "BenchmarkTest00564",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6259775143967811
+    },
+    {
+      "id": "BenchmarkTest00577",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6005427517970994
+    },
+    {
+      "id": "BenchmarkTest00578",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6186471293688011
+    },
+    {
+      "id": "BenchmarkTest00579",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6099325949353883
+    },
+    {
+      "id": "BenchmarkTest00580",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6070643560283886
+    },
+    {
+      "id": "BenchmarkTest00581",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6106430523890313
+    },
+    {
+      "id": "BenchmarkTest00582",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6105773171334374
+    },
+    {
+      "id": "BenchmarkTest00583",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6057995144873243
+    },
+    {
+      "id": "BenchmarkTest00584",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.615779785011151
+    },
+    {
+      "id": "BenchmarkTest00585",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6088061430349239
+    },
+    {
+      "id": "BenchmarkTest00608",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.617439897526777
+    },
+    {
+      "id": "BenchmarkTest00609",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6198107184049166
+    },
+    {
+      "id": "BenchmarkTest00610",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6266704679270034
+    },
+    {
+      "id": "BenchmarkTest00611",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6143605196940327
+    },
+    {
+      "id": "BenchmarkTest00612",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.610929035224629
+    },
+    {
+      "id": "BenchmarkTest00613",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.629072838134845
+    },
+    {
+      "id": "BenchmarkTest00614",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6211704609473419
+    },
+    {
+      "id": "BenchmarkTest00615",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6252654228512445
+    },
+    {
+      "id": "BenchmarkTest00616",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.635084305304944
+    },
+    {
+      "id": "BenchmarkTest00617",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.633179234971097
+    },
+    {
+      "id": "BenchmarkTest00618",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6264098616737477
+    },
+    {
+      "id": "BenchmarkTest00631",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5855476467912073
+    },
+    {
+      "id": "BenchmarkTest00632",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5811462698654323
+    },
+    {
+      "id": "BenchmarkTest00633",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5863502766923095
+    },
+    {
+      "id": "BenchmarkTest00634",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6014702216233225
+    },
+    {
+      "id": "BenchmarkTest00635",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6002822144943796
+    },
+    {
+      "id": "BenchmarkTest00636",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6002822144943796
+    },
+    {
+      "id": "BenchmarkTest00637",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5984177190082541
+    },
+    {
+      "id": "BenchmarkTest00638",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6141339731760117
+    },
+    {
+      "id": "BenchmarkTest00639",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6101441227745352
+    },
+    {
+      "id": "BenchmarkTest00640",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.608694916919375
+    },
+    {
+      "id": "BenchmarkTest00641",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6072369647091872
+    },
+    {
+      "id": "BenchmarkTest00652",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6267115192072712
+    },
+    {
+      "id": "BenchmarkTest00653",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6182462985545196
+    },
+    {
+      "id": "BenchmarkTest00654",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6256227676123391
+    },
+    {
+      "id": "BenchmarkTest00660",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6142240277462653
+    },
+    {
+      "id": "BenchmarkTest00661",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6010119937276234
+    },
+    {
+      "id": "BenchmarkTest00662",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6051894553278946
+    },
+    {
+      "id": "BenchmarkTest00663",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6135666306343078
+    },
+    {
+      "id": "BenchmarkTest00664",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6226371504348683
+    },
+    {
+      "id": "BenchmarkTest00665",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6032790388149506
+    },
+    {
+      "id": "BenchmarkTest00666",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5951632482729549
+    },
+    {
+      "id": "BenchmarkTest00667",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6034662481234807
+    },
+    {
+      "id": "BenchmarkTest00684",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6176586790570071
+    },
+    {
+      "id": "BenchmarkTest00685",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6082138628308942
+    },
+    {
+      "id": "BenchmarkTest00686",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6116885309308917
+    },
+    {
+      "id": "BenchmarkTest00687",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6104365647862988
+    },
+    {
+      "id": "BenchmarkTest00688",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6142242520906669
+    },
+    {
+      "id": "BenchmarkTest00689",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6335363906217364
+    },
+    {
+      "id": "BenchmarkTest00690",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6212544892906252
+    },
+    {
+      "id": "BenchmarkTest00691",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6203556337320371
+    },
+    {
+      "id": "BenchmarkTest00692",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6221278795133158
+    },
+    {
+      "id": "BenchmarkTest00693",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6006189156421458
+    },
+    {
+      "id": "BenchmarkTest00703",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.585633486739374
+    },
+    {
+      "id": "BenchmarkTest00704",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5612551417329207
+    },
+    {
+      "id": "BenchmarkTest00705",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6056998168688498
+    },
+    {
+      "id": "BenchmarkTest00706",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5939560396544403
+    },
+    {
+      "id": "BenchmarkTest00707",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5870828452028732
+    },
+    {
+      "id": "BenchmarkTest00708",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.609872759952409
+    },
+    {
+      "id": "BenchmarkTest00709",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5953311524997046
+    },
+    {
+      "id": "BenchmarkTest00710",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6134789332742616
+    },
+    {
+      "id": "BenchmarkTest00733",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6188925414332632
+    },
+    {
+      "id": "BenchmarkTest00734",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6154416605770108
+    },
+    {
+      "id": "BenchmarkTest00735",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6236410940897404
+    },
+    {
+      "id": "BenchmarkTest00744",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6020400790377896
+    },
+    {
+      "id": "BenchmarkTest00745",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6019700057414272
+    },
+    {
+      "id": "BenchmarkTest00746",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5991330888457765
+    },
+    {
+      "id": "BenchmarkTest00747",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6137970212262475
+    },
+    {
+      "id": "BenchmarkTest00748",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6257529876611507
+    },
+    {
+      "id": "BenchmarkTest00749",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6106980480553812
+    },
+    {
+      "id": "BenchmarkTest00750",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5929465664110822
+    },
+    {
+      "id": "BenchmarkTest00751",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.599177586386684
+    },
+    {
+      "id": "BenchmarkTest00752",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6074709880057614
+    },
+    {
+      "id": "BenchmarkTest00753",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6175337950208675
+    },
+    {
+      "id": "BenchmarkTest00775",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5930602659927763
+    },
+    {
+      "id": "BenchmarkTest00776",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5909986753789062
+    },
+    {
+      "id": "BenchmarkTest00777",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5961739254172749
+    },
+    {
+      "id": "BenchmarkTest00778",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5873906956840872
+    },
+    {
+      "id": "BenchmarkTest00779",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.59422032212262
+    },
+    {
+      "id": "BenchmarkTest00780",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5911751018621019
+    },
+    {
+      "id": "BenchmarkTest00781",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5935546370823934
+    },
+    {
+      "id": "BenchmarkTest00782",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.592847606208311
+    },
+    {
+      "id": "BenchmarkTest00789",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5673136357677186
+    },
+    {
+      "id": "BenchmarkTest00790",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5684781750570777
+    },
+    {
+      "id": "BenchmarkTest00791",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5643311439911642
+    },
+    {
+      "id": "BenchmarkTest00792",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5725698313450078
+    },
+    {
+      "id": "BenchmarkTest00793",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5643311439911642
+    },
+    {
+      "id": "BenchmarkTest00794",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5536019638928946
+    },
+    {
+      "id": "BenchmarkTest00795",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5445601107740078
+    },
+    {
+      "id": "BenchmarkTest00796",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5874573377322023
+    },
+    {
+      "id": "BenchmarkTest00797",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5708541859193427
+    },
+    {
+      "id": "BenchmarkTest00798",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5708541859193427
+    },
+    {
+      "id": "BenchmarkTest00817",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6062394149036462
+    },
+    {
+      "id": "BenchmarkTest00818",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.566213164374102
+    },
+    {
+      "id": "BenchmarkTest00819",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5857772460978341
+    },
+    {
+      "id": "BenchmarkTest00828",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5679573474513036
+    },
+    {
+      "id": "BenchmarkTest00829",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5731408873267542
+    },
+    {
+      "id": "BenchmarkTest00830",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5690717611666902
+    },
+    {
+      "id": "BenchmarkTest00831",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5978608405743665
+    },
+    {
+      "id": "BenchmarkTest00832",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5758058805796674
+    },
+    {
+      "id": "BenchmarkTest00853",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6187140928443933
+    },
+    {
+      "id": "BenchmarkTest00854",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6133289797580977
+    },
+    {
+      "id": "BenchmarkTest00855",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6188668433834741
+    },
+    {
+      "id": "BenchmarkTest00856",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6333029309133782
+    },
+    {
+      "id": "BenchmarkTest00857",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6226479954821834
+    },
+    {
+      "id": "BenchmarkTest00858",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6256648715685498
+    },
+    {
+      "id": "BenchmarkTest00859",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6407659237006209
+    },
+    {
+      "id": "BenchmarkTest00868",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6089495124514354
+    },
+    {
+      "id": "BenchmarkTest00869",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5902575408883896
+    },
+    {
+      "id": "BenchmarkTest00870",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6039006196590253
+    },
+    {
+      "id": "BenchmarkTest00871",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6087969322909557
+    },
+    {
+      "id": "BenchmarkTest00872",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5982180980664226
+    },
+    {
+      "id": "BenchmarkTest00873",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6059619344329832
+    },
+    {
+      "id": "BenchmarkTest00874",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5992814479134628
+    },
+    {
+      "id": "BenchmarkTest00875",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6125952644317352
+    },
+    {
+      "id": "BenchmarkTest00876",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6123520889406687
+    },
+    {
+      "id": "BenchmarkTest00877",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6284250918189843
+    },
+    {
+      "id": "BenchmarkTest00878",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5989135384610742
+    },
+    {
+      "id": "BenchmarkTest00898",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6233849011679191
+    },
+    {
+      "id": "BenchmarkTest00899",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6217412819660658
+    },
+    {
+      "id": "BenchmarkTest00900",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6217131206949381
+    },
+    {
+      "id": "BenchmarkTest00901",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6227715247740722
+    },
+    {
+      "id": "BenchmarkTest00902",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6312876297289367
+    },
+    {
+      "id": "BenchmarkTest00911",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6105970129968484
+    },
+    {
+      "id": "BenchmarkTest00912",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5993810885838414
+    },
+    {
+      "id": "BenchmarkTest00913",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6042683295543361
+    },
+    {
+      "id": "BenchmarkTest00914",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6184911180675853
+    },
+    {
+      "id": "BenchmarkTest00915",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6072064575474247
+    },
+    {
+      "id": "BenchmarkTest00916",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5931003611682194
+    },
+    {
+      "id": "BenchmarkTest00917",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.613216741449233
+    },
+    {
+      "id": "BenchmarkTest00918",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5993810885838414
+    },
+    {
+      "id": "BenchmarkTest00919",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6103432980358052
+    },
+    {
+      "id": "BenchmarkTest00920",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6128073370710283
+    },
+    {
+      "id": "BenchmarkTest00921",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6074227163145477
+    },
+    {
+      "id": "BenchmarkTest00942",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6157631329164645
+    },
+    {
+      "id": "BenchmarkTest00943",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.624699200728267
+    },
+    {
+      "id": "BenchmarkTest00944",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6282106257372524
+    },
+    {
+      "id": "BenchmarkTest00945",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6297213944221276
+    },
+    {
+      "id": "BenchmarkTest00946",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6214807119831748
+    },
+    {
+      "id": "BenchmarkTest00961",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6118292700719743
+    },
+    {
+      "id": "BenchmarkTest00962",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6073725963293656
+    },
+    {
+      "id": "BenchmarkTest00963",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6131390060502622
+    },
+    {
+      "id": "BenchmarkTest00964",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6161835367570151
+    },
+    {
+      "id": "BenchmarkTest00965",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6199915860882337
+    },
+    {
+      "id": "BenchmarkTest00966",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6139392430546387
+    },
+    {
+      "id": "BenchmarkTest00967",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6133445688680118
+    },
+    {
+      "id": "BenchmarkTest00971",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.620355388875538
+    },
+    {
+      "id": "BenchmarkTest00972",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6266100892112998
+    },
+    {
+      "id": "BenchmarkTest00973",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6229416116838704
+    },
+    {
+      "id": "BenchmarkTest00974",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6201331496412192
+    },
+    {
+      "id": "BenchmarkTest00975",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.619604474758342
+    },
+    {
+      "id": "BenchmarkTest00976",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6125813260615633
+    },
+    {
+      "id": "BenchmarkTest00984",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6273382811301099
+    },
+    {
+      "id": "BenchmarkTest00985",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6089298123403151
+    },
+    {
+      "id": "BenchmarkTest00986",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6047583755833075
+    },
+    {
+      "id": "BenchmarkTest00987",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.610071000166258
+    },
+    {
+      "id": "BenchmarkTest00988",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.610071000166258
+    },
+    {
+      "id": "BenchmarkTest00989",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6239007478134045
+    },
+    {
+      "id": "BenchmarkTest00990",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6167397419161
+    },
+    {
+      "id": "BenchmarkTest01015",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6066907948559125
+    },
+    {
+      "id": "BenchmarkTest01016",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6212050048685661
+    },
+    {
+      "id": "BenchmarkTest01017",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6267613454190726
+    },
+    {
+      "id": "BenchmarkTest01018",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6249645237721897
+    },
+    {
+      "id": "BenchmarkTest01019",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6115175003380091
+    },
+    {
+      "id": "BenchmarkTest01020",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6206924865188279
+    },
+    {
+      "id": "BenchmarkTest01021",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6369531620883392
+    },
+    {
+      "id": "BenchmarkTest01022",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.628378841820735
+    },
+    {
+      "id": "BenchmarkTest01037",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5969070973266539
+    },
+    {
+      "id": "BenchmarkTest01038",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6056249420414801
+    },
+    {
+      "id": "BenchmarkTest01039",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.593425446654225
+    },
+    {
+      "id": "BenchmarkTest01040",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5972832676399162
+    },
+    {
+      "id": "BenchmarkTest01041",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6100226155876644
+    },
+    {
+      "id": "BenchmarkTest01042",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.613801199296171
+    },
+    {
+      "id": "BenchmarkTest01043",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6084638087117819
+    },
+    {
+      "id": "BenchmarkTest01044",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6135305525562785
+    },
+    {
+      "id": "BenchmarkTest01045",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6121161944334198
+    },
+    {
+      "id": "BenchmarkTest01058",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6239001728665474
+    },
+    {
+      "id": "BenchmarkTest01059",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6189668675661779
+    },
+    {
+      "id": "BenchmarkTest01060",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6173399623961094
+    },
+    {
+      "id": "BenchmarkTest01069",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6062301217308528
+    },
+    {
+      "id": "BenchmarkTest01070",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6282605497981157
+    },
+    {
+      "id": "BenchmarkTest01071",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6000762167203328
+    },
+    {
+      "id": "BenchmarkTest01072",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6135656655342473
+    },
+    {
+      "id": "BenchmarkTest01073",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6033023929203694
+    },
+    {
+      "id": "BenchmarkTest01074",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6047295266515472
+    },
+    {
+      "id": "BenchmarkTest01075",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6047295266515472
+    },
+    {
+      "id": "BenchmarkTest01076",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6079636674716192
+    },
+    {
+      "id": "BenchmarkTest01077",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6060120917891908
+    },
+    {
+      "id": "BenchmarkTest01078",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6094306790693617
+    },
+    {
+      "id": "BenchmarkTest01079",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6204907339825018
+    },
+    {
+      "id": "BenchmarkTest01099",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6270311117270836
+    },
+    {
+      "id": "BenchmarkTest01100",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6203136936551875
+    },
+    {
+      "id": "BenchmarkTest01101",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.632505436783961
+    },
+    {
+      "id": "BenchmarkTest01102",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6325851044050522
+    },
+    {
+      "id": "BenchmarkTest01103",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6282967366954215
+    },
+    {
+      "id": "BenchmarkTest01104",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6314442157253438
+    },
+    {
+      "id": "BenchmarkTest01105",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6411498912601729
+    },
+    {
+      "id": "BenchmarkTest01106",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.642075540207845
+    },
+    {
+      "id": "BenchmarkTest01107",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6368650935660861
+    },
+    {
+      "id": "BenchmarkTest01108",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6351667108914971
+    },
+    {
+      "id": "BenchmarkTest01120",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6146210901664161
+    },
+    {
+      "id": "BenchmarkTest01121",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5994732931182055
+    },
+    {
+      "id": "BenchmarkTest01122",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6000490892747561
+    },
+    {
+      "id": "BenchmarkTest01123",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6089617793011217
+    },
+    {
+      "id": "BenchmarkTest01124",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6267267301353552
+    },
+    {
+      "id": "BenchmarkTest01125",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6257916383156542
+    },
+    {
+      "id": "BenchmarkTest01126",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6193391402734891
+    },
+    {
+      "id": "BenchmarkTest01127",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6241580686767271
+    },
+    {
+      "id": "BenchmarkTest01128",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6169712082595056
+    },
+    {
+      "id": "BenchmarkTest01129",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.626483788723071
+    },
+    {
+      "id": "BenchmarkTest01130",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6278895530205123
+    },
+    {
+      "id": "BenchmarkTest01131",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6140520558343462
+    },
+    {
+      "id": "BenchmarkTest01132",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6293293057092538
+    },
+    {
+      "id": "BenchmarkTest01133",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6305417534048648
+    },
+    {
+      "id": "BenchmarkTest01135",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6237816413786363
+    },
+    {
+      "id": "BenchmarkTest01136",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6252160934899533
+    },
+    {
+      "id": "BenchmarkTest01137",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6176939124253377
+    },
+    {
+      "id": "BenchmarkTest01138",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.607356398459497
+    },
+    {
+      "id": "BenchmarkTest01139",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.607356398459497
+    },
+    {
+      "id": "BenchmarkTest01140",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6331699786960462
+    },
+    {
+      "id": "BenchmarkTest01141",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6128140253806312
+    },
+    {
+      "id": "BenchmarkTest01147",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6103745139363681
+    },
+    {
+      "id": "BenchmarkTest01148",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6168053890399094
+    },
+    {
+      "id": "BenchmarkTest01149",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6196067069946033
+    },
+    {
+      "id": "BenchmarkTest01150",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6272625045451234
+    },
+    {
+      "id": "BenchmarkTest01151",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6317097358670235
+    },
+    {
+      "id": "BenchmarkTest01152",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.626660957407398
+    },
+    {
+      "id": "BenchmarkTest01153",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6423124009253671
+    },
+    {
+      "id": "BenchmarkTest01164",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5938309725180888
+    },
+    {
+      "id": "BenchmarkTest01165",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6214304812159883
+    },
+    {
+      "id": "BenchmarkTest01166",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5950918051630497
+    },
+    {
+      "id": "BenchmarkTest01167",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6177020280180184
+    },
+    {
+      "id": "BenchmarkTest01168",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6166489397182654
+    },
+    {
+      "id": "BenchmarkTest01169",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.618361495737526
+    },
+    {
+      "id": "BenchmarkTest01170",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6134298699210265
+    },
+    {
+      "id": "BenchmarkTest01183",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6248044697087993
+    },
+    {
+      "id": "BenchmarkTest01184",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6294420701703095
+    },
+    {
+      "id": "BenchmarkTest01195",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6107898968180222
+    },
+    {
+      "id": "BenchmarkTest01196",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.621474083352493
+    },
+    {
+      "id": "BenchmarkTest01197",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6088065721119025
+    },
+    {
+      "id": "BenchmarkTest01198",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6158767264349656
+    },
+    {
+      "id": "BenchmarkTest01199",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6097491750128763
+    },
+    {
+      "id": "BenchmarkTest01200",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5969066441981725
+    },
+    {
+      "id": "BenchmarkTest01201",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6107898968180222
+    },
+    {
+      "id": "BenchmarkTest01202",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6158767264349656
+    },
+    {
+      "id": "BenchmarkTest01226",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6140282779893916
+    },
+    {
+      "id": "BenchmarkTest01227",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6087447700923535
+    },
+    {
+      "id": "BenchmarkTest01228",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6263305375458689
+    },
+    {
+      "id": "BenchmarkTest01229",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6108150014988173
+    },
+    {
+      "id": "BenchmarkTest01230",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.638899458338721
+    },
+    {
+      "id": "BenchmarkTest01244",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5926102998398063
+    },
+    {
+      "id": "BenchmarkTest01245",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5869812919161176
+    },
+    {
+      "id": "BenchmarkTest01246",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6033252392243206
+    },
+    {
+      "id": "BenchmarkTest01247",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.590361730151321
+    },
+    {
+      "id": "BenchmarkTest01248",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.599174089708747
+    },
+    {
+      "id": "BenchmarkTest01249",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6168537391239857
+    },
+    {
+      "id": "BenchmarkTest01250",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6217373858143813
+    },
+    {
+      "id": "BenchmarkTest01271",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6357236200593219
+    },
+    {
+      "id": "BenchmarkTest01272",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6265604183779226
+    },
+    {
+      "id": "BenchmarkTest01273",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6044590965065537
+    },
+    {
+      "id": "BenchmarkTest01274",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6255208266761865
+    },
+    {
+      "id": "BenchmarkTest01275",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6251969449473174
+    },
+    {
+      "id": "BenchmarkTest01276",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6372994383659568
+    },
+    {
+      "id": "BenchmarkTest01277",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.62832880253738
+    },
+    {
+      "id": "BenchmarkTest01278",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6358408177923011
+    },
+    {
+      "id": "BenchmarkTest01279",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6254501167719299
+    },
+    {
+      "id": "BenchmarkTest01291",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5954023984764123
+    },
+    {
+      "id": "BenchmarkTest01292",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.619812846208333
+    },
+    {
+      "id": "BenchmarkTest01293",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6080530910338867
+    },
+    {
+      "id": "BenchmarkTest01294",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6100725624974953
+    },
+    {
+      "id": "BenchmarkTest01295",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6263039046820787
+    },
+    {
+      "id": "BenchmarkTest01296",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6085585309628788
+    },
+    {
+      "id": "BenchmarkTest01297",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6179023985106795
+    },
+    {
+      "id": "BenchmarkTest01298",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6179023985106795
+    },
+    {
+      "id": "BenchmarkTest01317",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6203102833299794
+    },
+    {
+      "id": "BenchmarkTest01318",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6286759387117653
+    },
+    {
+      "id": "BenchmarkTest01319",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.61975799721488
+    },
+    {
+      "id": "BenchmarkTest01320",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6174771802354582
+    },
+    {
+      "id": "BenchmarkTest01321",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6235808812815252
+    },
+    {
+      "id": "BenchmarkTest01322",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6253634104984317
+    },
+    {
+      "id": "BenchmarkTest01323",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.628872483333633
+    },
+    {
+      "id": "BenchmarkTest01324",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6249969690171069
+    },
+    {
+      "id": "BenchmarkTest01325",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6412607954179379
+    },
+    {
+      "id": "BenchmarkTest01332",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5985091715206893
+    },
+    {
+      "id": "BenchmarkTest01333",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6120933919738368
+    },
+    {
+      "id": "BenchmarkTest01334",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6056867471765182
+    },
+    {
+      "id": "BenchmarkTest01354",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6195445168815972
+    },
+    {
+      "id": "BenchmarkTest01355",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6259455624566583
+    },
+    {
+      "id": "BenchmarkTest01356",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6182709576607418
+    },
+    {
+      "id": "BenchmarkTest01357",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6225978954616501
+    },
+    {
+      "id": "BenchmarkTest01358",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6200222241179513
+    },
+    {
+      "id": "BenchmarkTest01366",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6029590267274326
+    },
+    {
+      "id": "BenchmarkTest01367",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6026415055619365
+    },
+    {
+      "id": "BenchmarkTest01368",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6018012809247648
+    },
+    {
+      "id": "BenchmarkTest01369",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.629393349717193
+    },
+    {
+      "id": "BenchmarkTest01370",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6134301129702688
+    },
+    {
+      "id": "BenchmarkTest01371",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6152193529397262
+    },
+    {
+      "id": "BenchmarkTest01372",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.611424367935742
+    },
+    {
+      "id": "BenchmarkTest01373",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6131860929127668
+    },
+    {
+      "id": "BenchmarkTest01398",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6290894470460868
+    },
+    {
+      "id": "BenchmarkTest01399",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6250558267642222
+    },
+    {
+      "id": "BenchmarkTest01400",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6283761627115457
+    },
+    {
+      "id": "BenchmarkTest01401",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6337480403334268
+    },
+    {
+      "id": "BenchmarkTest01410",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5937453094040164
+    },
+    {
+      "id": "BenchmarkTest01411",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6026523241024174
+    },
+    {
+      "id": "BenchmarkTest01412",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5986421151000696
+    },
+    {
+      "id": "BenchmarkTest01413",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6040223389450117
+    },
+    {
+      "id": "BenchmarkTest01414",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6166773052589444
+    },
+    {
+      "id": "BenchmarkTest01415",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6158692505710163
+    },
+    {
+      "id": "BenchmarkTest01416",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6145600064931538
+    },
+    {
+      "id": "BenchmarkTest01431",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.627273119106934
+    },
+    {
+      "id": "BenchmarkTest01432",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6141186574411289
+    },
+    {
+      "id": "BenchmarkTest01433",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6231896716969193
+    },
+    {
+      "id": "BenchmarkTest01434",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6225121496072673
+    },
+    {
+      "id": "BenchmarkTest01435",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6236800413297316
+    },
+    {
+      "id": "BenchmarkTest01447",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6212493358097374
+    },
+    {
+      "id": "BenchmarkTest01448",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6096319590755704
+    },
+    {
+      "id": "BenchmarkTest01449",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6183503997410373
+    },
+    {
+      "id": "BenchmarkTest01450",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6157842151381778
+    },
+    {
+      "id": "BenchmarkTest01451",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6143191166739334
+    },
+    {
+      "id": "BenchmarkTest01452",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6192554246826271
+    },
+    {
+      "id": "BenchmarkTest01453",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6150220635966669
+    },
+    {
+      "id": "BenchmarkTest01480",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6294038491417056
+    },
+    {
+      "id": "BenchmarkTest01481",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6218797285539776
+    },
+    {
+      "id": "BenchmarkTest01482",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6166778115220986
+    },
+    {
+      "id": "BenchmarkTest01483",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6174131783995411
+    },
+    {
+      "id": "BenchmarkTest01484",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.617563685935723
+    },
+    {
+      "id": "BenchmarkTest01485",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6235912580833556
+    },
+    {
+      "id": "BenchmarkTest01486",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6124250794187891
+    },
+    {
+      "id": "BenchmarkTest01487",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6359401277121999
+    },
+    {
+      "id": "BenchmarkTest01488",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.615729451308238
+    },
+    {
+      "id": "BenchmarkTest01489",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6367890006263117
+    },
+    {
+      "id": "BenchmarkTest01503",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5933904628639702
+    },
+    {
+      "id": "BenchmarkTest01504",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6087890490004693
+    },
+    {
+      "id": "BenchmarkTest01518",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6354795722308798
+    },
+    {
+      "id": "BenchmarkTest01519",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6144729775353261
+    },
+    {
+      "id": "BenchmarkTest01520",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.636934235395626
+    },
+    {
+      "id": "BenchmarkTest01534",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6055760132143153
+    },
+    {
+      "id": "BenchmarkTest01535",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6119087794892788
+    },
+    {
+      "id": "BenchmarkTest01536",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6268669921561331
+    },
+    {
+      "id": "BenchmarkTest01537",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6250772856369742
+    },
+    {
+      "id": "BenchmarkTest01538",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.614999205620561
+    },
+    {
+      "id": "BenchmarkTest01539",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6076341407765028
+    },
+    {
+      "id": "BenchmarkTest01540",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6031620403650809
+    },
+    {
+      "id": "BenchmarkTest01541",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5965715502817921
+    },
+    {
+      "id": "BenchmarkTest01542",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6187567095957492
+    },
+    {
+      "id": "BenchmarkTest01543",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6106914864863515
+    },
+    {
+      "id": "BenchmarkTest01544",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6097526174161183
+    },
+    {
+      "id": "BenchmarkTest01545",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6268669921561331
+    },
+    {
+      "id": "BenchmarkTest01563",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6208618595969341
+    },
+    {
+      "id": "BenchmarkTest01564",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6189382093587176
+    },
+    {
+      "id": "BenchmarkTest01565",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6285483681404743
+    },
+    {
+      "id": "BenchmarkTest01566",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6343334197105944
+    },
+    {
+      "id": "BenchmarkTest01567",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.642672336866675
+    },
+    {
+      "id": "BenchmarkTest01576",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5990787998249697
+    },
+    {
+      "id": "BenchmarkTest01577",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6137156021850902
+    },
+    {
+      "id": "BenchmarkTest01578",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6012624919942502
+    },
+    {
+      "id": "BenchmarkTest01579",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6182635509932022
+    },
+    {
+      "id": "BenchmarkTest01580",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6123132104557926
+    },
+    {
+      "id": "BenchmarkTest01581",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6133964687574893
+    },
+    {
+      "id": "BenchmarkTest01582",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6236479061483611
+    },
+    {
+      "id": "BenchmarkTest01602",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.623159031360107
+    },
+    {
+      "id": "BenchmarkTest01603",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6399336093696126
+    },
+    {
+      "id": "BenchmarkTest01611",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5896024517308628
+    },
+    {
+      "id": "BenchmarkTest01612",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6146652241374575
+    },
+    {
+      "id": "BenchmarkTest01613",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6126376319402259
+    },
+    {
+      "id": "BenchmarkTest01614",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6212246846767976
+    },
+    {
+      "id": "BenchmarkTest01634",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6119851800301507
+    },
+    {
+      "id": "BenchmarkTest01635",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6000751649954398
+    },
+    {
+      "id": "BenchmarkTest01636",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.59368220562721
+    },
+    {
+      "id": "BenchmarkTest01637",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5992699741047811
+    },
+    {
+      "id": "BenchmarkTest01638",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6133526468169292
+    },
+    {
+      "id": "BenchmarkTest01639",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6048633787252018
+    },
+    {
+      "id": "BenchmarkTest01640",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6002698715437566
+    },
+    {
+      "id": "BenchmarkTest01641",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6150484049648381
+    },
+    {
+      "id": "BenchmarkTest01649",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5832154812581927
+    },
+    {
+      "id": "BenchmarkTest01650",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5711658492953159
+    },
+    {
+      "id": "BenchmarkTest01651",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.577124189852937
+    },
+    {
+      "id": "BenchmarkTest01652",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5795633394417837
+    },
+    {
+      "id": "BenchmarkTest01653",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5735365457293946
+    },
+    {
+      "id": "BenchmarkTest01654",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5888411892539491
+    },
+    {
+      "id": "BenchmarkTest01655",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5823770853617851
+    },
+    {
+      "id": "BenchmarkTest01656",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5888411892539491
+    },
+    {
+      "id": "BenchmarkTest01675",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5934988705731016
+    },
+    {
+      "id": "BenchmarkTest01676",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5782896846547347
+    },
+    {
+      "id": "BenchmarkTest01677",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5961405363534745
+    },
+    {
+      "id": "BenchmarkTest01678",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6109552210521346
+    },
+    {
+      "id": "BenchmarkTest01679",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5960329517053831
+    },
+    {
+      "id": "BenchmarkTest01680",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5858344872949504
+    },
+    {
+      "id": "BenchmarkTest01681",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6007929485467963
+    },
+    {
+      "id": "BenchmarkTest01694",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5811761920841537
+    },
+    {
+      "id": "BenchmarkTest01695",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.587960073257575
+    },
+    {
+      "id": "BenchmarkTest01696",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5889053526547123
+    },
+    {
+      "id": "BenchmarkTest01697",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5826431035912532
+    },
+    {
+      "id": "BenchmarkTest01698",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.607543837398398
+    },
+    {
+      "id": "BenchmarkTest01699",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5916446861496901
+    },
+    {
+      "id": "BenchmarkTest01700",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5897026544402448
+    },
+    {
+      "id": "BenchmarkTest01701",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5885373689572163
+    },
+    {
+      "id": "BenchmarkTest01702",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5669509581802227
+    },
+    {
+      "id": "BenchmarkTest01703",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5827403003838532
+    },
+    {
+      "id": "BenchmarkTest01704",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5788901202179427
+    },
+    {
+      "id": "BenchmarkTest01705",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5767775682960791
+    },
+    {
+      "id": "BenchmarkTest01706",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5843790588334616
+    },
+    {
+      "id": "BenchmarkTest01707",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5915131046597867
+    },
+    {
+      "id": "BenchmarkTest01737",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.619969169661143
+    },
+    {
+      "id": "BenchmarkTest01738",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6332980944769572
+    },
+    {
+      "id": "BenchmarkTest01739",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6312441852666432
+    },
+    {
+      "id": "BenchmarkTest01740",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6392966253741702
+    },
+    {
+      "id": "BenchmarkTest01741",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6313133313561733
+    },
+    {
+      "id": "BenchmarkTest01742",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6436115253438119
+    },
+    {
+      "id": "BenchmarkTest01757",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5961558753540975
+    },
+    {
+      "id": "BenchmarkTest01758",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5936551716630262
+    },
+    {
+      "id": "BenchmarkTest01759",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5990637862877752
+    },
+    {
+      "id": "BenchmarkTest01760",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5977065575098687
+    },
+    {
+      "id": "BenchmarkTest01761",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6141303931735989
+    },
+    {
+      "id": "BenchmarkTest01762",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6028398098179624
+    },
+    {
+      "id": "BenchmarkTest01763",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.612057287461278
+    },
+    {
+      "id": "BenchmarkTest01764",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.608772620895209
+    },
+    {
+      "id": "BenchmarkTest01765",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.625892464110993
+    },
+    {
+      "id": "BenchmarkTest01766",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6052417056069846
+    },
+    {
+      "id": "BenchmarkTest01781",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.62491518591061
+    },
+    {
+      "id": "BenchmarkTest01782",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6291897808609278
+    },
+    {
+      "id": "BenchmarkTest01783",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6333099901916298
+    },
+    {
+      "id": "BenchmarkTest01784",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.631806883663575
+    },
+    {
+      "id": "BenchmarkTest01785",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6360896871367119
+    },
+    {
+      "id": "BenchmarkTest01786",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6265660823948078
+    },
+    {
+      "id": "BenchmarkTest01787",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6341548697341451
+    },
+    {
+      "id": "BenchmarkTest01788",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6303102201739182
+    },
+    {
+      "id": "BenchmarkTest01797",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6232778741320344
+    },
+    {
+      "id": "BenchmarkTest01798",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6134581216499758
+    },
+    {
+      "id": "BenchmarkTest01799",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6194532915902611
+    },
+    {
+      "id": "BenchmarkTest01800",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.62954768192491
+    },
+    {
+      "id": "BenchmarkTest01801",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6199116437112521
+    },
+    {
+      "id": "BenchmarkTest01822",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6239802214165826
+    },
+    {
+      "id": "BenchmarkTest01823",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.618505049767409
+    },
+    {
+      "id": "BenchmarkTest01824",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6186118802748032
+    },
+    {
+      "id": "BenchmarkTest01825",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6169462325397951
+    },
+    {
+      "id": "BenchmarkTest01826",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6221813346425402
+    },
+    {
+      "id": "BenchmarkTest01827",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6177382443274618
+    },
+    {
+      "id": "BenchmarkTest01828",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6263868151570072
+    },
+    {
+      "id": "BenchmarkTest01829",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6409298642302481
+    },
+    {
+      "id": "BenchmarkTest01830",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6336415485992166
+    },
+    {
+      "id": "BenchmarkTest01844",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6134443200848299
+    },
+    {
+      "id": "BenchmarkTest01845",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5967805599758119
+    },
+    {
+      "id": "BenchmarkTest01846",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6009415433076822
+    },
+    {
+      "id": "BenchmarkTest01847",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6013387226013094
+    },
+    {
+      "id": "BenchmarkTest01848",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6031391213571928
+    },
+    {
+      "id": "BenchmarkTest01849",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.618961092618733
+    },
+    {
+      "id": "BenchmarkTest01853",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6220392111626257
+    },
+    {
+      "id": "BenchmarkTest01854",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6333288473778875
+    },
+    {
+      "id": "BenchmarkTest01855",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6292258967856537
+    },
+    {
+      "id": "BenchmarkTest01856",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6293330991294732
+    },
+    {
+      "id": "BenchmarkTest01857",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6268070675465569
+    },
+    {
+      "id": "BenchmarkTest01858",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6333164595867108
+    },
+    {
+      "id": "BenchmarkTest01859",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6259831655718305
+    },
+    {
+      "id": "BenchmarkTest01860",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6306600281374354
+    },
+    {
+      "id": "BenchmarkTest01866",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6230038339695926
+    },
+    {
+      "id": "BenchmarkTest01867",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6241671824960036
+    },
+    {
+      "id": "BenchmarkTest01868",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6081716782219587
+    },
+    {
+      "id": "BenchmarkTest01869",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6124887306999129
+    },
+    {
+      "id": "BenchmarkTest01870",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.615254406984209
+    },
+    {
+      "id": "BenchmarkTest01871",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6087021442904076
+    },
+    {
+      "id": "BenchmarkTest01895",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6159245957861189
+    },
+    {
+      "id": "BenchmarkTest01896",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.624663883389855
+    },
+    {
+      "id": "BenchmarkTest01897",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6222183878392776
+    },
+    {
+      "id": "BenchmarkTest01898",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.625047892387132
+    },
+    {
+      "id": "BenchmarkTest01899",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6345032321760707
+    },
+    {
+      "id": "BenchmarkTest01900",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6364160194799501
+    },
+    {
+      "id": "BenchmarkTest01901",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6354981749754036
+    },
+    {
+      "id": "BenchmarkTest01911",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5915760925126249
+    },
+    {
+      "id": "BenchmarkTest01912",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5964344365866303
+    },
+    {
+      "id": "BenchmarkTest01913",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6070212420091934
+    },
+    {
+      "id": "BenchmarkTest01930",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6251779095271374
+    },
+    {
+      "id": "BenchmarkTest01931",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6351980342319962
+    },
+    {
+      "id": "BenchmarkTest01932",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6216702949263531
+    },
+    {
+      "id": "BenchmarkTest01933",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6267022816517475
+    },
+    {
+      "id": "BenchmarkTest01934",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.633270430530968
+    },
+    {
+      "id": "BenchmarkTest01945",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.608642698652345
+    },
+    {
+      "id": "BenchmarkTest01946",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6092799883512188
+    },
+    {
+      "id": "BenchmarkTest01947",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.608642698652345
+    },
+    {
+      "id": "BenchmarkTest01948",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5963851233016294
+    },
+    {
+      "id": "BenchmarkTest01949",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6121457222977442
+    },
+    {
+      "id": "BenchmarkTest01950",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6176531176899864
+    },
+    {
+      "id": "BenchmarkTest01951",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.614503845577909
+    },
+    {
+      "id": "BenchmarkTest01952",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6083459347750702
+    },
+    {
+      "id": "BenchmarkTest01953",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6132984236349333
+    },
+    {
+      "id": "BenchmarkTest01954",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.613071918519387
+    },
+    {
+      "id": "BenchmarkTest01975",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6241094968766249
+    },
+    {
+      "id": "BenchmarkTest01976",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6227092772511101
+    },
+    {
+      "id": "BenchmarkTest01977",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.621610595142411
+    },
+    {
+      "id": "BenchmarkTest01978",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6225355751718096
+    },
+    {
+      "id": "BenchmarkTest01979",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6382685726006492
+    },
+    {
+      "id": "BenchmarkTest01980",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6431354028245786
+    },
+    {
+      "id": "BenchmarkTest01981",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6393859956548004
+    },
+    {
+      "id": "BenchmarkTest01982",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6386393988306797
+    },
+    {
+      "id": "BenchmarkTest01993",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6012728322778564
+    },
+    {
+      "id": "BenchmarkTest01994",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6069653728262114
+    },
+    {
+      "id": "BenchmarkTest01995",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6251065210061046
+    },
+    {
+      "id": "BenchmarkTest01996",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6214446525707505
+    },
+    {
+      "id": "BenchmarkTest01997",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.609665080629658
+    },
+    {
+      "id": "BenchmarkTest01998",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6228409330357493
+    },
+    {
+      "id": "BenchmarkTest01999",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.637047507532864
+    },
+    {
+      "id": "BenchmarkTest02000",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6354165897621302
+    },
+    {
+      "id": "BenchmarkTest02001",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.633704450866833
+    },
+    {
+      "id": "BenchmarkTest02002",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6272452039755391
+    },
+    {
+      "id": "BenchmarkTest02003",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6413114385032821
+    },
+    {
+      "id": "BenchmarkTest02004",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6379839489534622
+    },
+    {
+      "id": "BenchmarkTest02007",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6108630704894034
+    },
+    {
+      "id": "BenchmarkTest02008",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6350721301885057
+    },
+    {
+      "id": "BenchmarkTest02009",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.621772986913104
+    },
+    {
+      "id": "BenchmarkTest02010",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6179247927226977
+    },
+    {
+      "id": "BenchmarkTest02011",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6205708808144437
+    },
+    {
+      "id": "BenchmarkTest02012",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6273601548106068
+    },
+    {
+      "id": "BenchmarkTest02013",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6224426388520282
+    },
+    {
+      "id": "BenchmarkTest02014",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6302092218676648
+    },
+    {
+      "id": "BenchmarkTest02017",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6216428179170758
+    },
+    {
+      "id": "BenchmarkTest02018",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6311906755673826
+    },
+    {
+      "id": "BenchmarkTest02019",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6121096895508377
+    },
+    {
+      "id": "BenchmarkTest02020",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6258446260368674
+    },
+    {
+      "id": "BenchmarkTest02021",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6297569950568035
+    },
+    {
+      "id": "BenchmarkTest02022",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6271264091045363
+    },
+    {
+      "id": "BenchmarkTest02023",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6374131873513765
+    },
+    {
+      "id": "BenchmarkTest02024",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6358132469108065
+    },
+    {
+      "id": "BenchmarkTest02041",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5916672721259586
+    },
+    {
+      "id": "BenchmarkTest02042",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6074557562790756
+    },
+    {
+      "id": "BenchmarkTest02043",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6268328769266992
+    },
+    {
+      "id": "BenchmarkTest02044",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6213422417816833
+    },
+    {
+      "id": "BenchmarkTest02060",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6263937742943891
+    },
+    {
+      "id": "BenchmarkTest02061",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6283054054504185
+    },
+    {
+      "id": "BenchmarkTest02062",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6399256973284573
+    },
+    {
+      "id": "BenchmarkTest02063",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6310054280660028
+    },
+    {
+      "id": "BenchmarkTest02071",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6167561837632635
+    },
+    {
+      "id": "BenchmarkTest02072",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6078303818632467
+    },
+    {
+      "id": "BenchmarkTest02073",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6223922738420314
+    },
+    {
+      "id": "BenchmarkTest02074",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6168858791762059
+    },
+    {
+      "id": "BenchmarkTest02075",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6203104989263964
+    },
+    {
+      "id": "BenchmarkTest02076",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6268062935318544
+    },
+    {
+      "id": "BenchmarkTest02077",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6251813558111032
+    },
+    {
+      "id": "BenchmarkTest02078",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5998624184342629
+    },
+    {
+      "id": "BenchmarkTest02079",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6214231634740146
+    },
+    {
+      "id": "BenchmarkTest02080",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6127793379448484
+    },
+    {
+      "id": "BenchmarkTest02081",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6291999314580521
+    },
+    {
+      "id": "BenchmarkTest02082",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6203993139544491
+    },
+    {
+      "id": "BenchmarkTest02083",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6207339269496248
+    },
+    {
+      "id": "BenchmarkTest02101",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6099751477470332
+    },
+    {
+      "id": "BenchmarkTest02102",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6184913109223337
+    },
+    {
+      "id": "BenchmarkTest02103",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6367418636971554
+    },
+    {
+      "id": "BenchmarkTest02118",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5897251387960541
+    },
+    {
+      "id": "BenchmarkTest02119",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6079754337516009
+    },
+    {
+      "id": "BenchmarkTest02120",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6021996718866516
+    },
+    {
+      "id": "BenchmarkTest02121",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6179376105575649
+    },
+    {
+      "id": "BenchmarkTest02138",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6278967583391125
+    },
+    {
+      "id": "BenchmarkTest02139",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6308998815272454
+    },
+    {
+      "id": "BenchmarkTest02140",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6274802383854895
+    },
+    {
+      "id": "BenchmarkTest02141",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6357400376470561
+    },
+    {
+      "id": "BenchmarkTest02157",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6199718189838523
+    },
+    {
+      "id": "BenchmarkTest02158",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6152412821334133
+    },
+    {
+      "id": "BenchmarkTest02159",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6284315162387657
+    },
+    {
+      "id": "BenchmarkTest02160",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6272157246055529
+    },
+    {
+      "id": "BenchmarkTest02161",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6122713050918906
+    },
+    {
+      "id": "BenchmarkTest02162",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6212962225306617
+    },
+    {
+      "id": "BenchmarkTest02163",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6195652507299569
+    },
+    {
+      "id": "BenchmarkTest02164",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6243983945579336
+    },
+    {
+      "id": "BenchmarkTest02190",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6200840445279145
+    },
+    {
+      "id": "BenchmarkTest02191",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6151323018251268
+    },
+    {
+      "id": "BenchmarkTest02192",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6215299343515076
+    },
+    {
+      "id": "BenchmarkTest02193",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6197197794627093
+    },
+    {
+      "id": "BenchmarkTest02194",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6297672400134653
+    },
+    {
+      "id": "BenchmarkTest02195",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6235336698252372
+    },
+    {
+      "id": "BenchmarkTest02210",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5964089226530406
+    },
+    {
+      "id": "BenchmarkTest02211",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6085023925891584
+    },
+    {
+      "id": "BenchmarkTest02212",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6027397109065181
+    },
+    {
+      "id": "BenchmarkTest02213",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.611776848649534
+    },
+    {
+      "id": "BenchmarkTest02214",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6041453064542005
+    },
+    {
+      "id": "BenchmarkTest02215",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5982344289740086
+    },
+    {
+      "id": "BenchmarkTest02216",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.607637023301409
+    },
+    {
+      "id": "BenchmarkTest02217",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6096962771051635
+    },
+    {
+      "id": "BenchmarkTest02218",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6059792877093885
+    },
+    {
+      "id": "BenchmarkTest02219",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6171880106427915
+    },
+    {
+      "id": "BenchmarkTest02220",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6306586698981207
+    },
+    {
+      "id": "BenchmarkTest02245",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6241198003137661
+    },
+    {
+      "id": "BenchmarkTest02246",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6316114064827759
+    },
+    {
+      "id": "BenchmarkTest02254",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6159680478659647
+    },
+    {
+      "id": "BenchmarkTest02255",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6142963430570233
+    },
+    {
+      "id": "BenchmarkTest02256",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6112424272317821
+    },
+    {
+      "id": "BenchmarkTest02257",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6193224018786744
+    },
+    {
+      "id": "BenchmarkTest02258",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6246861611291136
+    },
+    {
+      "id": "BenchmarkTest02259",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6088164059391835
+    },
+    {
+      "id": "BenchmarkTest02260",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6120026610106549
+    },
+    {
+      "id": "BenchmarkTest02289",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.622405003031072
+    },
+    {
+      "id": "BenchmarkTest02290",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.621685065688566
+    },
+    {
+      "id": "BenchmarkTest02291",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6307504095447275
+    },
+    {
+      "id": "BenchmarkTest02292",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6242085681113723
+    },
+    {
+      "id": "BenchmarkTest02293",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6370633476304758
+    },
+    {
+      "id": "BenchmarkTest02294",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6277686360423196
+    },
+    {
+      "id": "BenchmarkTest02295",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6260275980674754
+    },
+    {
+      "id": "BenchmarkTest02296",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6390304894335428
+    },
+    {
+      "id": "BenchmarkTest02297",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6364774462157147
+    },
+    {
+      "id": "BenchmarkTest02298",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.641309224442771
+    },
+    {
+      "id": "BenchmarkTest02307",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5997893419879144
+    },
+    {
+      "id": "BenchmarkTest02308",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.61040281136815
+    },
+    {
+      "id": "BenchmarkTest02309",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6035527356273397
+    },
+    {
+      "id": "BenchmarkTest02310",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6027736884334429
+    },
+    {
+      "id": "BenchmarkTest02311",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6001450689683392
+    },
+    {
+      "id": "BenchmarkTest02312",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6097607950245795
+    },
+    {
+      "id": "BenchmarkTest02337",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.638818924451196
+    },
+    {
+      "id": "BenchmarkTest02338",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6318632344236774
+    },
+    {
+      "id": "BenchmarkTest02345",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6274458317542522
+    },
+    {
+      "id": "BenchmarkTest02346",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6138137753209112
+    },
+    {
+      "id": "BenchmarkTest02347",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6161619560130698
+    },
+    {
+      "id": "BenchmarkTest02348",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.62240778478613
+    },
+    {
+      "id": "BenchmarkTest02349",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6289654453957633
+    },
+    {
+      "id": "BenchmarkTest02350",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.61997398790331
+    },
+    {
+      "id": "BenchmarkTest02351",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6329410864590003
+    },
+    {
+      "id": "BenchmarkTest02371",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.621349198910833
+    },
+    {
+      "id": "BenchmarkTest02372",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6348981697644519
+    },
+    {
+      "id": "BenchmarkTest02373",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6272820485446721
+    },
+    {
+      "id": "BenchmarkTest02374",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6255866458530795
+    },
+    {
+      "id": "BenchmarkTest02375",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6397628163836668
+    },
+    {
+      "id": "BenchmarkTest02385",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5930829952593676
+    },
+    {
+      "id": "BenchmarkTest02386",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5914476260122129
+    },
+    {
+      "id": "BenchmarkTest02387",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6208981219867729
+    },
+    {
+      "id": "BenchmarkTest02388",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6221079808785742
+    },
+    {
+      "id": "BenchmarkTest02389",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6118313712184114
+    },
+    {
+      "id": "BenchmarkTest02390",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6225742323395159
+    },
+    {
+      "id": "BenchmarkTest02391",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6257177766556098
+    },
+    {
+      "id": "BenchmarkTest02392",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6173046255045769
+    },
+    {
+      "id": "BenchmarkTest02393",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6324639989840812
+    },
+    {
+      "id": "BenchmarkTest02415",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6332449312779597
+    },
+    {
+      "id": "BenchmarkTest02416",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6344016098364136
+    },
+    {
+      "id": "BenchmarkTest02417",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6267026599560153
+    },
+    {
+      "id": "BenchmarkTest02418",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6269509372500526
+    },
+    {
+      "id": "BenchmarkTest02419",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6382080335009399
+    },
+    {
+      "id": "BenchmarkTest02420",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6257561266593348
+    },
+    {
+      "id": "BenchmarkTest02421",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6339752521955755
+    },
+    {
+      "id": "BenchmarkTest02422",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6261167205196863
+    },
+    {
+      "id": "BenchmarkTest02423",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6386039564493531
+    },
+    {
+      "id": "BenchmarkTest02424",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6282913531167865
+    },
+    {
+      "id": "BenchmarkTest02425",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6336284342599573
+    },
+    {
+      "id": "BenchmarkTest02426",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.632644484804181
+    },
+    {
+      "id": "BenchmarkTest02434",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6275266224972277
+    },
+    {
+      "id": "BenchmarkTest02435",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6273483315104351
+    },
+    {
+      "id": "BenchmarkTest02436",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6148524758847149
+    },
+    {
+      "id": "BenchmarkTest02437",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6115317130064818
+    },
+    {
+      "id": "BenchmarkTest02438",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6162340215569081
+    },
+    {
+      "id": "BenchmarkTest02439",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6104782047601764
+    },
+    {
+      "id": "BenchmarkTest02440",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6228944102942762
+    },
+    {
+      "id": "BenchmarkTest02441",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6139139592283552
+    },
+    {
+      "id": "BenchmarkTest02442",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6055871711128983
+    },
+    {
+      "id": "BenchmarkTest02443",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.611312110991813
+    },
+    {
+      "id": "BenchmarkTest02444",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6142185351936247
+    },
+    {
+      "id": "BenchmarkTest02445",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5997929853135692
+    },
+    {
+      "id": "BenchmarkTest02458",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6214265954692644
+    },
+    {
+      "id": "BenchmarkTest02459",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6231740657282645
+    },
+    {
+      "id": "BenchmarkTest02460",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6193424308062673
+    },
+    {
+      "id": "BenchmarkTest02461",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6366711870895645
+    },
+    {
+      "id": "BenchmarkTest02474",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6037620614484425
+    },
+    {
+      "id": "BenchmarkTest02475",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6204303974373513
+    },
+    {
+      "id": "BenchmarkTest02476",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6099410977733858
+    },
+    {
+      "id": "BenchmarkTest02477",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.621957446995282
+    },
+    {
+      "id": "BenchmarkTest02478",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6187729152588964
+    },
+    {
+      "id": "BenchmarkTest02479",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6232158454256943
+    },
+    {
+      "id": "BenchmarkTest02497",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.63782087574125
+    },
+    {
+      "id": "BenchmarkTest02498",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6102125294686084
+    },
+    {
+      "id": "BenchmarkTest02499",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6258252902325956
+    },
+    {
+      "id": "BenchmarkTest02500",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6216661452244113
+    },
+    {
+      "id": "BenchmarkTest02501",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.62745669772222
+    },
+    {
+      "id": "BenchmarkTest02502",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6245819902528095
+    },
+    {
+      "id": "BenchmarkTest02503",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.639719772965435
+    },
+    {
+      "id": "BenchmarkTest02504",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6106095731629823
+    },
+    {
+      "id": "BenchmarkTest02505",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6334827963743794
+    },
+    {
+      "id": "BenchmarkTest02506",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6313065068588262
+    },
+    {
+      "id": "BenchmarkTest02519",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6039489566259
+    },
+    {
+      "id": "BenchmarkTest02520",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6095300573827203
+    },
+    {
+      "id": "BenchmarkTest02521",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6136482692294951
+    },
+    {
+      "id": "BenchmarkTest02522",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6127032357669455
+    },
+    {
+      "id": "BenchmarkTest02547",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5996888068289075
+    },
+    {
+      "id": "BenchmarkTest02548",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6048642820530125
+    },
+    {
+      "id": "BenchmarkTest02549",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6013505445220634
+    },
+    {
+      "id": "BenchmarkTest02550",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.603231728990744
+    },
+    {
+      "id": "BenchmarkTest02551",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5943308641741505
+    },
+    {
+      "id": "BenchmarkTest02552",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.60539602507137
+    },
+    {
+      "id": "BenchmarkTest02573",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5762370254620599
+    },
+    {
+      "id": "BenchmarkTest02574",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5619272913372175
+    },
+    {
+      "id": "BenchmarkTest02575",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5764186299604188
+    },
+    {
+      "id": "BenchmarkTest02576",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5674799954864873
+    },
+    {
+      "id": "BenchmarkTest02577",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5882212530934445
+    },
+    {
+      "id": "BenchmarkTest02602",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.61460108080745
+    },
+    {
+      "id": "BenchmarkTest02603",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5831882114420371
+    },
+    {
+      "id": "BenchmarkTest02604",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6130898264490575
+    },
+    {
+      "id": "BenchmarkTest02605",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5913185200178507
+    },
+    {
+      "id": "BenchmarkTest02606",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.5987268971507598
+    },
+    {
+      "id": "BenchmarkTest02614",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5898099714833807
+    },
+    {
+      "id": "BenchmarkTest02615",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5873653561728123
+    },
+    {
+      "id": "BenchmarkTest02616",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5918760220728819
+    },
+    {
+      "id": "BenchmarkTest02617",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6014879963133424
+    },
+    {
+      "id": "BenchmarkTest02618",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.579673365366604
+    },
+    {
+      "id": "BenchmarkTest02619",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5866105753473456
+    },
+    {
+      "id": "BenchmarkTest02620",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5760448219837855
+    },
+    {
+      "id": "BenchmarkTest02621",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.5787377690072866
+    },
+    {
+      "id": "BenchmarkTest02658",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.621815761969026
+    },
+    {
+      "id": "BenchmarkTest02659",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6222774169616601
+    },
+    {
+      "id": "BenchmarkTest02660",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6396941125144768
+    },
+    {
+      "id": "BenchmarkTest02661",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6182272304402286
+    },
+    {
+      "id": "BenchmarkTest02662",
+      "category": "crypto",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6348168859438418
+    },
+    {
+      "id": "BenchmarkTest02663",
+      "category": "crypto",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6465322871889934
+    },
+    {
+      "id": "BenchmarkTest02670",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6018110332003266
+    },
+    {
+      "id": "BenchmarkTest02671",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6052063369436002
+    },
+    {
+      "id": "BenchmarkTest02672",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6068274195941452
+    },
+    {
+      "id": "BenchmarkTest02673",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.590088636648349
+    },
+    {
+      "id": "BenchmarkTest02674",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6319548558580297
+    },
+    {
+      "id": "BenchmarkTest02675",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6011193834877352
+    },
+    {
+      "id": "BenchmarkTest02676",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6083482882411605
+    },
+    {
+      "id": "BenchmarkTest02677",
+      "category": "hash",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.61355653592451
+    },
+    {
+      "id": "BenchmarkTest02678",
+      "category": "hash",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6225254382167124
+    },
+    {
+      "id": "BenchmarkTest02700",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6319134937417524
+    },
+    {
+      "id": "BenchmarkTest02701",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.634864640712618
+    },
+    {
+      "id": "BenchmarkTest02702",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6304900939537376
+    },
+    {
+      "id": "BenchmarkTest02703",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6330160786771841
+    },
+    {
+      "id": "BenchmarkTest02704",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6211099222152306
+    },
+    {
+      "id": "BenchmarkTest02705",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6199703154792361
+    },
+    {
+      "id": "BenchmarkTest02706",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6321918856092832
+    },
+    {
+      "id": "BenchmarkTest02707",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6297270263197837
+    },
+    {
+      "id": "BenchmarkTest02708",
+      "category": "weakrand",
+      "actual": 1,
+      "predicted": 1,
+      "score": 0.6414356550320591
+    },
+    {
+      "id": "BenchmarkTest02715",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6162383048489797
+    },
+    {
+      "id": "BenchmarkTest02716",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6318507927778275
+    },
+    {
+      "id": "BenchmarkTest02717",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6032612315623113
+    },
+    {
+      "id": "BenchmarkTest02718",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6315137050358067
+    },
+    {
+      "id": "BenchmarkTest02719",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6296206447341407
+    },
+    {
+      "id": "BenchmarkTest02720",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6310730017205921
+    },
+    {
+      "id": "BenchmarkTest02721",
+      "category": "weakrand",
+      "actual": 0,
+      "predicted": 1,
+      "score": 0.6290351218952622
+    }
+  ],
+  "limitations": [
+    "OWASP labels concern a particular target CWE, not all potential flaws in the file",
+    "Source-level screening does not resolve servlet helper code or dataflow",
+    "Exact/structural overlap filtering does not guarantee semantic independence",
+    "External evaluation is now observed: do not tune against it and claim untouched test performance"
+  ],
+  "abstentions": [
+    {
+      "id": "BenchmarkTest00066",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest00067",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest00068",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest00140",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest00368",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest00369",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest00461",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest00702",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest00960",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01119",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01162",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01163",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01502",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01575",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01648",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01842",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01843",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01910",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest01992",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest02038",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest02039",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest02040",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest02117",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest02209",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    },
+    {
+      "id": "BenchmarkTest02473",
+      "category": "weakrand",
+      "actual": 1,
+      "reason": "not_evaluable_by_api"
+    }
+  ],
+  "coverage": 0.9743589743589743
+}

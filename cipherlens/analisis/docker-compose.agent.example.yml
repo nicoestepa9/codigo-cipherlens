@@ -1,0 +1,31 @@
+# Ejemplo de agente en Docker (P5.9). Clona, ajusta y levanta:
+#   docker compose -f docker-compose.agent.example.yml up -d
+services:
+  cryptoguard-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile.agent
+    image: cryptoguard-agent:local
+    restart: unless-stopped
+    # Solo egress saliente hacia la plataforma: ningun puerto expuesto.
+    environment:
+      CRYPTOGUARD_AGENT_KEY: ${CRYPTOGUARD_AGENT_KEY}
+      CRYPTOGUARD_SERVER_URL: ${CRYPTOGUARD_SERVER_URL:-http://127.0.0.1:8000}
+      CRYPTOGUARD_UPLOAD_LEVEL: ${CRYPTOGUARD_UPLOAD_LEVEL:-standard}
+      CRYPTOGUARD_PSEUDONYMIZE: ${CRYPTOGUARD_PSEUDONYMIZE:-internal}
+      CRYPTOGUARD_API_KEY_ENV: CRYPTOGUARD_AGENT_KEY
+      ENV: dev
+      JWT_SECRET: dev-insecure-jwt-secret-1234567890
+    volumes:
+      - ./agent.yaml:/etc/cryptoguard-agent/agent.yaml:ro
+      - agent-state:/var/lib/cryptoguard-agent
+    # El discovery nativo no requiere privilegios. Si además se instala nmap
+    # (nunca vendorizado; licencia NPSL) para fingerprint de SO, `-O` exige:
+    #   cap_add: [NET_RAW, NET_ADMIN]
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp
+volumes:
+  agent-state:

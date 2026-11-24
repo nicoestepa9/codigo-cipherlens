@@ -1,0 +1,407 @@
+{
+  "version": "3a402424ed022a0c",
+  "sklearnVersion": "1.9.1",
+  "provenance": "Project-authored parameter examples for supervised policy reproduction; not a public real-world benchmark",
+  "method": "Depth-one decision tree; train only, fixed seed 42, no hyperparameter search",
+  "learnedThreshold": 2047.5,
+  "limitations": [
+    "Labels explicitly authored against a simple size policy; learning this boundary is not a novel vulnerability detector",
+    "Boundary examples 2047 and 2048 are intentionally taught in train; test measures reproduction at different declared values",
+    "Declared sizes are parameter inputs, not proof a provider will accept or generate a key of that size",
+    "Do not combine these metrics with independent public-code benchmark metrics"
+  ],
+  "metrics": {
+    "train": {
+      "size": 15,
+      "classificationReport": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 9.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          9,
+          0
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "ruleReference": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 9.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        }
+      },
+      "predictions": [
+        {
+          "bits": 512,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 768,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 1024,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 1536,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 1984,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 2047,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 2048,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 2112,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 2560,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 3072,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 4096,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 7680,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 8192,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 15360,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 16384,
+          "actual": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    "validation": {
+      "size": 10,
+      "classificationReport": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "ruleReference": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        }
+      },
+      "predictions": [
+        {
+          "bits": 640,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 960,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 1280,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 1792,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 2046,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 2049,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 2176,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 3584,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 6144,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 12288,
+          "actual": 0,
+          "predicted": 0
+        }
+      ]
+    },
+    "test": {
+      "size": 12,
+      "classificationReport": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 7.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "ruleReference": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 7.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        }
+      },
+      "predictions": [
+        {
+          "bits": 576,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 704,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 896,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 1152,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 1408,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 1920,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 2040,
+          "actual": 1,
+          "predicted": 1
+        },
+        {
+          "bits": 2050,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 2304,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 2816,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 5120,
+          "actual": 0,
+          "predicted": 0
+        },
+        {
+          "bits": 10240,
+          "actual": 0,
+          "predicted": 0
+        }
+      ]
+    }
+  }
+}

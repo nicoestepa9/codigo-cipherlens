@@ -1,0 +1,52 @@
+{
+  "version": "3a402424ed022a0c",
+  "kind": "supervised_rsa_size_policy",
+  "catalogSha256": "3a402424ed022a0c4243644dca26da6081090e17f3f15e1322371abe48dd1c14",
+  "domain": [
+    512,
+    16384
+  ],
+  "policyMinimum": 2048,
+  "left": [
+    1,
+    -1,
+    -1
+  ],
+  "right": [
+    2,
+    -1,
+    -1
+  ],
+  "threshold": [
+    2047.5,
+    -2.0,
+    -2.0
+  ],
+  "values": [
+    [
+      [
+        0.6,
+        0.4
+      ]
+    ],
+    [
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        1.0,
+        0.0
+      ]
+    ]
+  ],
+  "provenance": "Project-authored parameter examples for supervised policy reproduction; not a public real-world benchmark",
+  "limitations": [
+    "Labels explicitly authored against a simple size policy; learning this boundary is not a novel vulnerability detector",
+    "Boundary examples 2047 and 2048 are intentionally taught in train; test measures reproduction at different declared values",
+    "Declared sizes are parameter inputs, not proof a provider will accept or generate a key of that size",
+    "Do not combine these metrics with independent public-code benchmark metrics"
+  ]
+}

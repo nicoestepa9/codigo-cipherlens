@@ -1,0 +1,36 @@
+{
+  "definition": {
+    "cipher_policy": "Potential symmetric cipher misuse under the source benchmark policy (weak algorithms or ECB); not full AES security",
+    "rsa_key_size": "Potential insufficient asymmetric key size under CryptoAPI-Bench labels; not padding detection"
+  },
+  "sourceHashes": {
+    "rocco\\analisis\\data\\crypto_ml\\dataset.jsonl": "05a5a9197aa93240f07a9ac10b21c9083c7ec11598b9543a7be5151815916c93",
+    "rocco\\analisis\\data\\crypto_ml\\owasp-external-v1\\dataset.jsonl": "8ad2adfc85861d4517ab77e2922cf1bae9a8e08a147809b469af038c47bd6c20"
+  },
+  "taskCounts": {
+    "cipher_policy": {
+      "rows": 289,
+      "labels": {
+        "1": 166,
+        "0": 123
+      },
+      "groups": 262
+    },
+    "rsa_key_size": {
+      "rows": 6,
+      "labels": {
+        "1": 5,
+        "0": 1
+      },
+      "groups": 6
+    }
+  },
+  "excluded": [],
+  "ccaIncluded": false,
+  "owaspRole": "Observed development source; cannot claim independent external validation",
+  "limitations": [
+    "Lexical extraction does not resolve control flow",
+    "Conflicts after extraction are excluded and reported, reducing coverage",
+    "Derived OWASP samples retain GPL-2.0 source licensing"
+  ]
+}

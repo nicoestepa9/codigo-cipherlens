@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# CryptoGuard local database
+cryptoguard.db
+*.db
+*.db.bak-*
+*.db.backup-*
+
+# Scan output artifacts
+scans/*
+!scans/github.com_443_20260727_214545.json
+
+# Environment secrets
+.env*
+!.env.example

@@ -1,0 +1,23 @@
+apiVersion: 1
+
+# Prune: si se borra este archivo, Grafana elimina el datasource provisionado.
+prune: true
+
+datasources:
+  - name: CryptoGuard
+    uid: cryptoguard-infinity
+    type: yesoreyeram-infinity-datasource
+    access: proxy
+    # Base URL de la API; los paneles usan rutas relativas (/api/reports/...).
+    url: ${CRYPTOGUARD_URL}
+    editable: false
+    jsonData:
+      # Autenticacion por X-API-Key (rol viewer).
+      auth_method: apiKey
+      apiKeyKey: X-API-Key
+      apiKeyType: header
+      # Restringe los hosts alcanzables por este datasource.
+      allowedHosts:
+        - ${CRYPTOGUARD_URL}
+    secureJsonData:
+      apiKeyValue: ${CRYPTOGUARD_API_KEY}

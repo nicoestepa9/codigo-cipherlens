@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLS Analyzer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid #1e293b;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 2rem;
+            color: #38bdf8;
+            margin-bottom: 0.5rem;
+        }
+        header p { color: #94a3b8; }
+
+        .scan-form {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .scan-form input {
+            padding: 0.75rem 1.25rem;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            background: #1e293b;
+            color: #e2e8f0;
+            font-size: 1rem;
+            width: 500px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .scan-form input:focus { border-color: #38bdf8; }
+        .scan-form input::placeholder { color: #64748b; }
+        .scan-form button {
+            padding: 0.75rem 2rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .scan-form button:hover { background: #1d4ed8; }
+
+        .download-btn {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            background: #059669;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+        .download-btn:hover { background: #047857; }
+
+        .error-box {
+            background: #450a0a;
+            border: 1px solid #7f1d1d;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            color: #fca5a5;
+        }
+
+        .score-card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+        .score-number {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .score-label { color: #94a3b8; margin-top: 0.5rem; }
+        .score-bar {
+            height: 8px;
+            background: #334155;
+            border-radius: 4px;
+            margin-top: 1rem;
+            overflow: hidden;
+        }
+        .score-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s;
+        }
+
+        .severity-summary {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .severity-badge {
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .sev-critical { background: #7f1d1d; color: #fca5a5; }
+        .sev-high { background: #78350f; color: #fbbf24; }
+        .sev-medium { background: #713f12; color: #fde047; }
+        .sev-low { background: #164e63; color: #67e8f9; }
+        .sev-info { background: #1e293b; color: #94a3b8; border: 1px solid #334155; }
+        .sev-not_evaluable { background: #1e3a5f; color: #60a5fa; border: 1px solid #2563eb; }
+        .sev-not-evaluable { background: #1e3a5f; color: #60a5fa; border: 1px solid #2563eb; }
+
+        .section {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #334155;
+        }
+        .section h2 {
+            font-size: 1.25rem;
+            color: #38bdf8;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 0.6rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+            font-size: 0.9rem;
+        }
+        th { color: #94a3b8; font-weight: 600; }
+        td { color: #e2e8f0; }
+
+        .finding-card {
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        .finding-critical { background: #1c1017; border-color: #ef4444; }
+        .finding-high { background: #1c1610; border-color: #f59e0b; }
+        .finding-medium { background: #1c1a10; border-color: #eab308; }
+        .finding-low { background: #101c1c; border-color: #06b6d4; }
+        .finding-info { background: #1e293b; border-color: #64748b; }
+        .finding-not_evaluable { background: #0f1e3a; border-color: #3b82f6; }
+        .finding-not-evaluable { background: #0f1e3a; border-color: #3b82f6; }
+        .finding-title { font-weight: 600; margin-bottom: 0.25rem; }
+        .finding-desc { color: #94a3b8; font-size: 0.9rem; }
+        .finding-rec { color: #34d399; font-size: 0.85rem; margin-top: 0.5rem; }
+
+        .tag {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 0.25rem;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 0.3rem 1rem;
+            font-size: 0.9rem;
+        }
+        .cert-grid dt { color: #94a3b8; font-weight: 600; }
+        .cert-grid dd { color: #e2e8f0; word-break: break-all; }
+
+        .protocol-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .proto-badge {
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .proto-ok { background: #14532d; color: #4ade80; }
+        .proto-weak { background: #7f1d1d; color: #fca5a5; }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #475569;
+            font-size: 0.85rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #94a3b8;
+        }
+        .spinner {
+            border: 3px solid #334155;
+            border-top: 3px solid #38bdf8;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TLS Analyzer</h1>
+            <p>Handshake Inspector & Vulnerability Scanner</p>
+        </header>
+
+        <form class="scan-form" method="POST" action="/scan">
+            <input type="text" name="target" placeholder="example.com or example.com:8443"
+                   value="{{ target if target else '' }}" required>
+            <input type="hidden" name="authorizationAccepted" value="false">
+            <input type="hidden" name="authorizationVersion"
+                   value="{{ authorization_version|default('') }}">
+            <button type="submit">Scan</button>
+        </form>
+        <script>
+            (function () {
+                var version = {{ authorization_version|default('')|tojson }};
+                var declaration = {{ authorization_text|default('')|tojson }};
+                var storageKey = 'cloud-scan-authorization:' + version;
+                document.querySelectorAll('.scan-form').forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (localStorage.getItem(storageKey) !== 'accepted') {
+                            if (!window.confirm(declaration)) {
+                                event.preventDefault();
+                                return;
+                            }
+                            localStorage.setItem(storageKey, 'accepted');
+                        }
+                        form.elements.authorizationAccepted.value = 'true';
+                        form.elements.authorizationVersion.value = version;
+                    });
+                });
+            })();
+        </script>
+
+        {% if error %}
+        <div class="error-box">{{ error }}</div>
+        {% endif %}
+
+        {% if result %}
+        {% set summary = result.summary() %}
+
+        <!-- Score -->
+        <div class="score-card">
+            {% if result.score >= 80 %}
+            <div class="score-number" style="color: #4ade80;">{{ result.score }}</div>
+            {% elif result.score >= 60 %}
+            <div class="score-number" style="color: #fbbf24;">{{ result.score }}</div>
+            {% elif result.score >= 40 %}
+            <div class="score-number" style="color: #f97316;">{{ result.score }}</div>
+            {% else %}
+            <div class="score-number" style="color: #ef4444;">{{ result.score }}</div>
+            {% endif %}
+            <div class="score-label">Security Score</div>
+            <div class="score-bar">
+                <div class="score-bar-fill" style="width: {{ result.score }}%;
+                    background: {% if result.score >= 80 %}#4ade80{% elif result.score >= 60 %}#fbbf24{% elif result.score >= 40 %}#f97316{% else %}#ef4444{% endif %};">
+                </div>
+            </div>
+            <div class="severity-summary">
+                {% if summary.critical > 0 %}
+                <span class="severity-badge sev-critical">{{ summary.critical }} Critical</span>
+                {% endif %}
+                {% if summary.high > 0 %}
+                <span class="severity-badge sev-high">{{ summary.high }} High</span>
+                {% endif %}
+                {% if summary.medium > 0 %}
+                <span class="severity-badge sev-medium">{{ summary.medium }} Medium</span>
+                {% endif %}
+                {% if summary.low > 0 %}
+                <span class="severity-badge sev-low">{{ summary.low }} Low</span>
+                {% endif %}
+                {% if summary.info > 0 %}
+                <span class="severity-badge sev-info">{{ summary.info }} Info</span>
+                {% endif %}
+                {% if summary.not_evaluable > 0 %}
+                <span class="severity-badge sev-not-evaluable">{{ summary.not_evaluable }} Not Evaluable</span>
+                {% endif %}
+                {% if summary.total == 0 %}
+                <span class="severity-badge proto-ok">No Issues Found</span>
+                {% endif %}
+            </div>
+            <button class="download-btn" onclick="downloadResults()">Download JSON</button>
+        </div>
+
+        <!-- Handshake Info -->
+        {% if result.handshake and not result.handshake.connection_error %}
+        <div class="section">
+            <h2>TLS Handshake</h2>
+            <table>
+                <tr><th>Host</th><td>{{ result.handshake.host }}:{{ result.handshake.port }}</td></tr>
+                <tr><th>IP Address</th><td>{{ result.handshake.ip_address or 'N/A' }}</td></tr>
+                <tr><th>Negotiated Protocol</th><td>{{ result.handshake.negotiated_protocol }}</td></tr>
+                <tr><th>Negotiated Cipher</th><td>{{ result.handshake.negotiated_cipher }}</td></tr>
+                {% for key, val in result.handshake.extensions.items() %}
+                <tr><th>{{ key }}</th><td>{{ val }}</td></tr>
+                {% endfor %}
+            </table>
+
+            {% if result.handshake.supported_protocols %}
+            <h3 style="margin-top: 1rem; font-size: 1rem; color: #94a3b8;">Supported Protocols</h3>
+            <div class="protocol-badges" style="margin-top: 0.5rem;">
+                {% for proto in result.handshake.supported_protocols %}
+                {% if proto in ['SSLv2', 'SSLv3', 'TLS 1.0', 'TLS 1.1'] %}
+                <span class="proto-badge proto-weak">{{ proto }}</span>
+                {% else %}
+                <span class="proto-badge proto-ok">{{ proto }}</span>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if result.handshake.accepted_cipher_suites %}
+            <h3 style="margin-top: 1.5rem; font-size: 1rem; color: #94a3b8;">
+                Accepted Cipher Suites ({{ result.handshake.accepted_cipher_suites|length }})
+            </h3>
+            <table style="margin-top: 0.5rem;">
+                <thead>
+                    <tr><th>#</th><th>Cipher Suite</th><th>Protocol</th><th>Bits</th></tr>
+                </thead>
+                <tbody>
+                    {% for c in result.handshake.accepted_cipher_suites[:30] %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ c.name }}</td>
+                        <td>{{ c.get('protocol', '') }}</td>
+                        <td>{{ c.get('bits', '') }}</td>
+                    </tr>
+                    {% endfor %}
+                    {% if result.handshake.accepted_cipher_suites|length > 30 %}
+                    <tr><td colspan="4" style="color: #64748b;">
+                        +{{ result.handshake.accepted_cipher_suites|length - 30 }} more
+                    </td></tr>
+                    {% endif %}
+                </tbody>
+            </table>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- Certificates -->
+        {% if result.certificate_chain %}
+        <div class="section">
+            <h2>Certificate Chain</h2>
+            {% for cert in result.certificate_chain %}
+            <div style="margin-bottom: 1.5rem; padding: 1rem; background: #0f172a; border-radius: 8px;">
+                <h3 style="font-size: 1rem; color: #38bdf8; margin-bottom: 0.75rem;">
+                    {{ cert.subject.get('CN', 'Unknown') }}
+                    {% if loop.first %}
+                    <span class="tag" style="background: #14532d; color: #4ade80;">Leaf</span>
+                    {% elif cert.is_self_signed %}
+                    <span class="tag" style="background: #1e3a5f; color: #60a5fa;">Root CA</span>
+                    {% else %}
+                    <span class="tag" style="background: #312e81; color: #a5b4fc;">Intermediate</span>
+                    {% endif %}
+                </h3>
+                <dl class="cert-grid">
+                    <dt>Subject</dt>
+                    <dd>{{ cert.subject.get('CN', 'N/A') }}</dd>
+                    <dt>Issuer</dt>
+                    <dd>{{ cert.issuer.get('CN', 'N/A') }}</dd>
+                    <dt>Serial</dt>
+                    <dd>{{ cert.serial_number }}</dd>
+                    <dt>Valid From</dt>
+                    <dd>{{ cert.not_before }}</dd>
+                    <dt>Valid Until</dt>
+                    <dd>
+                        {{ cert.not_after }}
+                        {% if cert.is_expired %}
+                        <span class="tag sev-critical">EXPIRED</span>
+                        {% elif cert.days_until_expiry <= 30 %}
+                        <span class="tag sev-medium">Expires in {{ cert.days_until_expiry }}d</span>
+                        {% else %}
+                        <span class="tag proto-ok">Valid</span>
+                        {% endif %}
+                    </dd>
+                    <dt>Key</dt>
+                    <dd>{{ cert.key_type }} {{ cert.key_size }}-bit</dd>
+                    <dt>Signature</dt>
+                    <dd>{{ cert.signature_algorithm }}</dd>
+                    <dt>Self-Signed</dt>
+                    <dd>{{ 'Yes' if cert.is_self_signed else 'No' }}</dd>
+                    {% if cert.san %}
+                    <dt>SAN</dt>
+                    <dd>{{ cert.san|join(', ') }}</dd>
+                    {% endif %}
+                    {% if cert.key_usage %}
+                    <dt>Key Usage</dt>
+                    <dd>{{ cert.key_usage|join(', ') }}</dd>
+                    {% endif %}
+                    <dt>SHA-256</dt>
+                    <dd style="font-family: monospace; font-size: 0.8rem;">{{ cert.fingerprint_sha256 }}</dd>
+                </dl>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- Findings -->
+        <div class="section">
+            <h2>Vulnerability Findings</h2>
+            {% if result.findings %}
+                {% for f in result.findings|sort(attribute='severity') %}
+                <div class="finding-card finding-{{ f.severity.value|lower }}">
+                    <div class="finding-title">
+                        <span class="tag sev-{{ f.severity.value|lower }}">{{ f.severity.value }}</span>
+                        {{ f.title }}
+                        <span style="color: #64748b; font-size: 0.8rem; font-weight: normal;">{{ f.id }}</span>
+                    </div>
+                    <div class="finding-desc">{{ f.description }}</div>
+                    {% if f.section_reference %}
+                    <div class="finding-rec">NIST: {{ f.section_reference }}</div>
+                    {% endif %}
+                    {% if f.citation %}
+                    <div style="color: #94a3b8; font-size: 0.8rem; margin-top: 0.25rem;">{{ f.citation }}</div>
+                    {% endif %}
+                    {% if f.observed_value %}
+                    <div style="color: #fbbf24; font-size: 0.8rem; margin-top: 0.25rem;">Observed: {{ f.observed_value }}</div>
+                    {% endif %}
+                    {% if f.recommendation %}
+                    <div class="finding-rec">Recommendation: {{ f.recommendation }}</div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            {% else %}
+                <p style="color: #4ade80; text-align: center; padding: 1rem;">No vulnerabilities detected.</p>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <footer>
+            TLS Analyzer v1.0 &mdash; Handshake Inspector & Vulnerability Scanner
+        </footer>
+    </div>
+
+    {% if result %}
+    <script id="scan-data" type="application/json">{{ result.to_dict() | tojson }}</script>
+    <script>
+        function downloadResults() {
+            var data = JSON.parse(document.getElementById('scan-data').textContent);
+            fetch('/download', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+            .then(function(resp) {
+                if (!resp.ok) { throw new Error('Server responded with ' + resp.status); }
+                return resp.blob();
+            })
+            .then(function(blob) {
+                var url = URL.createObjectURL(blob);
+                var a = document.createElement('a');
+                a.href = url;
+                a.download = data.host + '_' + data.port + '_' + new Date().toISOString().slice(0,19).replace(/[:T]/g,'') + '.json';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            })
+            .catch(function(err) {
+                alert('Download failed: ' + err.message);
+            });
+        }
+    </script>
+    {% endif %}
+</body>
+</html>

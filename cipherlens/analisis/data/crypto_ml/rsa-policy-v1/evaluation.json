@@ -1,0 +1,42 @@
+{
+  "trainingPerformed": false,
+  "size": 12,
+  "provenance": "Project-authored parameter examples for supervised policy reproduction; not a public real-world benchmark",
+  "classificationReport": {
+    "0": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "1": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 12.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 12.0
+    }
+  },
+  "confusionMatrix": [
+    [
+      5,
+      0
+    ],
+    [
+      0,
+      7
+    ]
+  ]
+}

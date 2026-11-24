@@ -1,0 +1,218 @@
+{
+  "train": [
+    {
+      "id": "cryptoapi:cryptoapi-row-104",
+      "group": "1",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-18",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-21",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-22",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-23",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-24",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-25",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-33",
+      "group": "21",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00005",
+      "group": "49",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00020",
+      "group": "49",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00053",
+      "group": "54",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00058",
+      "group": "59",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00209",
+      "group": "74",
+      "label": 0
+    }
+  ],
+  "validation": [
+    {
+      "id": "cryptoapi:cryptoapi-row-156",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-159",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-160",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-161",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-162",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-163",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00054",
+      "group": "55",
+      "label": 0
+    }
+  ],
+  "test": [
+    {
+      "id": "cryptoapi:cryptoapi-row-101",
+      "group": "0",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-135",
+      "group": "0",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-138",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-139",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-140",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-141",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-142",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-178",
+      "group": "0",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-181",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-182",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-183",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-184",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-185",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-57",
+      "group": "0",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-60",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-61",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-62",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-63",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-64",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-82",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00019",
+      "group": "50",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00059",
+      "group": "50",
+      "label": 0
+    }
+  ]
+}

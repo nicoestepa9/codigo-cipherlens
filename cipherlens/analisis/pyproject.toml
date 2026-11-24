@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tls-analyzer"
+version = "1.0.0"
+description = "TLS Handshake Analyzer & Vulnerability Scanner"
+requires-python = ">=3.10"
+# Dependencias del nucleo puro (motor de escaneo + CLI + agente).
+# FastAPI/SQLAlchemy/Flask/APScheduler NO estan aca: viven en el extra [server]
+# para que la imagen del agente on-premise sea chica (ver docs/agent.md).
+dependencies = [
+    "rich>=13.0",
+    "cryptography>=42.0",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+ml = ["scikit-learn>=1.5,<2", "openpyxl>=3.1,<4", "javalang>=0.13,<0.14"]
+# Agente de recoleccion on-premise: escanea y reporta por HTTPS saliente.
+agent = ["PyYAML>=6.0"]
+# Plataforma (API FastAPI + SQLite + schedulers + web legacy Flask).
+server = [
+    "javalang>=0.13,<0.14",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "sqlalchemy>=2.0",
+    "flask>=3.0",
+    "apscheduler>=3.10",
+    "alembic>=1.13",
+    "PyJWT>=2.8.0",
+    "argon2-cffi>=25.1.0",
+    "psycopg[binary]>=3.1",
+]
+# Extra opcional del motor (analisis con sslyze).
+sslyze = ["sslyze>=6.0"]
+
+[project.scripts]
+tls-analyzer = "tls_analyzer.main:main"
+cryptoguard-agent = "tls_analyzer.agent.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"tls_analyzer.crypto_ml" = ["assets/model.json", "assets/cipher_model_v3.json", "assets/rsa_policy_model.json", "assets/LICENSE-*.txt"]
+
+[tool.pytest.ini_options]
+markers = [
+    "e2e: end-to-end tests that exercise the real scan pipeline over the network (skipped when offline).",
+]

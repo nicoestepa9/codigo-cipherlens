@@ -1,0 +1,221 @@
+{
+  "host": "github.com",
+  "port": 443,
+  "score": 100,
+  "findings": [
+    {
+      "id": "NO_ALPN",
+      "title": "ALPN Not Supported",
+      "description": "Application-Layer Protocol Negotiation is not in use.",
+      "severity": "INFO",
+      "category": "Configuration",
+      "recommendation": "Consider enabling ALPN for HTTP/2 support.",
+      "details": {}
+    }
+  ],
+  "handshake": {
+    "host": "github.com",
+    "port": 443,
+    "ip_address": "4.228.31.150",
+    "negotiated_protocol": "TLSv1.3",
+    "negotiated_cipher": "TLS_AES_128_GCM_SHA256",
+    "cipher_info": {
+      "name": "TLS_AES_128_GCM_SHA256",
+      "protocol": "TLSv1.3",
+      "bits": 128
+    },
+    "supported_protocols": [
+      "TLS 1.2",
+      "TLS 1.3"
+    ],
+    "shared_ciphers": [],
+    "server_hello_extensions": {
+      "tls_version": "0x0303",
+      "cipher_suite": "0x1301",
+      "cipher_suite_name": "TLS_AES_128_GCM_SHA256",
+      "session_id": "bf9dad023829938084e4d0b0ddbf3c129bf2573acd692a634128b05843ad792c",
+      "compression_method": 0,
+      "extensions": [
+        {
+          "type": 43,
+          "type_name": "supported_versions",
+          "length": 2,
+          "data_hex": "0304",
+          "versions": []
+        },
+        {
+          "type": 51,
+          "type_name": "key_share",
+          "length": 36,
+          "data_hex": "001d00201c7232a61a2f962d3ed6437c58678d2aa8cad3af9ff6ff5c50764ada59c43914",
+          "group": "0x001d (x25519)",
+          "key_length": 32,
+          "key_hex": "1c7232a61a2f962d3ed6437c58678d2aa8cad3af9ff6ff5c50764ada59c43914"
+        }
+      ],
+      "random": "fa7b9e9cb6249d5ed4288e53d7f924c632059e2ef6a615891496d67e2bdce2d8"
+    },
+    "accepted_cipher_suites": [
+      {
+        "name": "ECDHE-ECDSA-AES256-GCM-SHA384",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-ECDSA-AES256-GCM-SHA384  TLSv1.2 Kx=ECDH     Au=ECDSA Enc=AESGCM(256)            Mac=AEAD",
+        "bits": 256,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "ECDHE-RSA-AES256-GCM-SHA384",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-RSA-AES256-GCM-SHA384    TLSv1.2 Kx=ECDH     Au=RSA   Enc=AESGCM(256)            Mac=AEAD",
+        "bits": 256,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "ECDHE-ECDSA-AES128-GCM-SHA256",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-ECDSA-AES128-GCM-SHA256  TLSv1.2 Kx=ECDH     Au=ECDSA Enc=AESGCM(128)            Mac=AEAD",
+        "bits": 128,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-RSA-AES128-GCM-SHA256    TLSv1.2 Kx=ECDH     Au=RSA   Enc=AESGCM(128)            Mac=AEAD",
+        "bits": 128,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "ECDHE-ECDSA-CHACHA20-POLY1305",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-ECDSA-CHACHA20-POLY1305  TLSv1.2 Kx=ECDH     Au=ECDSA Enc=CHACHA20/POLY1305(256) Mac=AEAD",
+        "bits": 256,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "ECDHE-RSA-CHACHA20-POLY1305",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-RSA-CHACHA20-POLY1305    TLSv1.2 Kx=ECDH     Au=RSA   Enc=CHACHA20/POLY1305(256) Mac=AEAD",
+        "bits": 256,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "ECDHE-ECDSA-AES256-SHA384",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-ECDSA-AES256-SHA384      TLSv1.2 Kx=ECDH     Au=ECDSA Enc=AES(256)               Mac=SHA384",
+        "bits": 256,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "ECDHE-RSA-AES256-SHA384",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-RSA-AES256-SHA384        TLSv1.2 Kx=ECDH     Au=RSA   Enc=AES(256)               Mac=SHA384",
+        "bits": 256,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "ECDHE-ECDSA-AES128-SHA256",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-ECDSA-AES128-SHA256      TLSv1.2 Kx=ECDH     Au=ECDSA Enc=AES(128)               Mac=SHA256",
+        "bits": 128,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "ECDHE-RSA-AES128-SHA256",
+        "protocol": "TLSv1.3",
+        "description": "ECDHE-RSA-AES128-SHA256        TLSv1.2 Kx=ECDH     Au=RSA   Enc=AES(128)               Mac=SHA256",
+        "bits": 128,
+        "mac": "",
+        "kea": "kx-ecdhe"
+      },
+      {
+        "name": "DHE-RSA-AES256-GCM-SHA384",
+        "protocol": "TLSv1.3",
+        "description": "DHE-RSA-AES256-GCM-SHA384      TLSv1.2 Kx=DH       Au=RSA   Enc=AESGCM(256)            Mac=AEAD",
+        "bits": 256,
+        "mac": "",
+        "kea": "kx-dhe"
+      },
+      {
+        "name": "DHE-RSA-AES128-GCM-SHA256",
+        "protocol": "TLSv1.3",
+        "description": "DHE-RSA-AES128-GCM-SHA256      TLSv1.2 Kx=DH       Au=RSA   Enc=AESGCM(128)            Mac=AEAD",
+        "bits": 128,
+        "mac": "",
+        "kea": "kx-dhe"
+      },
+      {
+        "name": "DHE-RSA-AES256-SHA256",
+        "protocol": "TLSv1.3",
+        "description": "DHE-RSA-AES256-SHA256          TLSv1.2 Kx=DH       Au=RSA   Enc=AES(256)               Mac=SHA256",
+        "bits": 256,
+        "mac": "",
+        "kea": "kx-dhe"
+      },
+      {
+        "name": "DHE-RSA-AES128-SHA256",
+        "protocol": "TLSv1.3",
+        "description": "DHE-RSA-AES128-SHA256          TLSv1.2 Kx=DH       Au=RSA   Enc=AES(128)               Mac=SHA256",
+        "bits": 128,
+        "mac": "",
+        "kea": "kx-dhe"
+      }
+    ],
+    "rejected_cipher_suites": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLS_CHACHA20_POLY1305_SHA256",
+      "TLS_AES_128_GCM_SHA256"
+    ],
+    "extensions": {},
+    "server_cert_chain": [],
+    "connection_error": null
+  },
+  "certificate_chain": [
+    {
+      "subject": {
+        "CN": "github.com"
+      },
+      "issuer": {
+        "C": "GB",
+        "O": "Sectigo Limited",
+        "CN": "Sectigo Public Server Authentication CA DV E36"
+      },
+      "serial_number": "72010E03F4A067FE4E796266430718F6",
+      "not_before": "2026-07-03T00:00:00+00:00",
+      "not_after": "2026-09-30T23:59:59+00:00",
+      "is_expired": false,
+      "days_until_expiry": 64,
+      "san": [
+        "github.com",
+        "www.github.com"
+      ],
+      "key_type": "EC (secp256r1)",
+      "key_size": 256,
+      "signature_algorithm": "ecdsa-with-SHA256",
+      "fingerprint_sha256": "17:f8:fd:2e:3f:d2:c1:13:fc:b9:77:2d:8a:4b:ab:b8:52:2d:d0:6d:d0:79:49:15:a4:ff:98:b1:b6:86:3a:00",
+      "fingerprint_sha1": "a5:47:1f:87:66:fe:af:b2:ee:46:99:70:ae:da:6c:61:4d:14:b2:1b",
+      "is_self_signed": false,
+      "ocsp_must_staple": false,
+      "certificate_policies": [],
+      "basic_constraints": "CA=False, pathLen=None",
+      "key_usage": [
+        "digitalSignature"
+      ],
+      "extended_key_usage": [
+        "serverAuth"
+      ],
+      "ca_issuers": [
+        "http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVE36.crt"
+      ],
+      "crl_distribution_points": []
+    }
+  ]
+}

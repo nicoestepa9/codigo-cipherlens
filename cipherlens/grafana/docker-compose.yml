@@ -1,0 +1,35 @@
+services:
+  grafana:
+    # Version de Grafana fijada (probar subidas de forma explicita).
+    image: grafana/grafana:11.6.0
+    container_name: cryptoguard-grafana
+    restart: unless-stopped
+    ports:
+      # 3001 en el host para no chocar con el frontend (3000).
+      - "3001:3000"
+    environment:
+      # Version del plugin Infinity fijada via URL de release (v3.0.0).
+      # En Grafana 11.6 la variable es GF_PLUGINS_PREINSTALL (sin _SYNC; esa se
+      # ignora) con sintaxis oficial <plugin ID>@<version>@<URL del zip>.
+      # async=false: se instala antes de arrancar (bloquea unos segundos).
+      GF_PLUGINS_PREINSTALL: yesoreyeram-infinity-datasource@3.0.0@https://github.com/grafana/grafana-infinity-datasource/releases/download/v3.0.0/yesoreyeram-infinity-datasource-3.0.0.zip
+      GF_PLUGINS_PREINSTALL_ASYNC: "false"
+      GF_SECURITY_ADMIN_USER: ${GF_ADMIN_USER:-admin}
+      GF_SECURITY_ADMIN_PASSWORD: ${GF_ADMIN_PASSWORD:-admin}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_ANALYTICS_REPORTING_ENABLED: "false"
+      GF_ANALYTICS_CHECK_FOR_UPDATES: "false"
+      # La URL y la API key de CryptoGuard llegan por entorno y se inyectan en
+      # los campos seguros del datasource. No commitear valores reales.
+      CRYPTOGUARD_URL: ${CRYPTOGUARD_URL:-http://host.docker.internal:8000}
+      CRYPTOGUARD_API_KEY: ${CRYPTOGUARD_API_KEY:?definir CRYPTOGUARD_API_KEY en .env}
+    volumes:
+      - ./provisioning:/etc/grafana/provisioning:ro
+      - ./dashboards:/var/lib/grafana/dashboards:ro
+      - grafana-data:/var/lib/grafana
+    extra_hosts:
+      # Permite llegar al backend que corre en el host (X en Linux y Windows).
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  grafana-data:

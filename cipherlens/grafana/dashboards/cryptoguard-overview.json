@@ -1,0 +1,443 @@
+{
+  "id": null,
+  "uid": "cryptoguard-overview",
+  "title": "CryptoGuard - Overview",
+  "description": "Panel general de CryptoGuard (TLS, issues, certificados, agentes on-premise) alimentado por /api/reports/* via Infinity.",
+  "tags": ["cryptoguard"],
+  "timezone": "utc",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "5m",
+  "editable": true,
+  "time": {"from": "now-90d", "to": "now"},
+  "templating": {
+    "list": [
+      {
+        "name": "agent",
+        "label": "Sitio / Agente",
+        "type": "query",
+        "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+        "refresh": 1,
+        "includeAll": true,
+        "multi": false,
+        "allValue": "__all__",
+        "current": {"selected": true, "text": "Todos", "value": ""},
+        "query": {
+          "queryType": "infinity",
+          "infinityQuery": {
+            "refId": "A",
+            "type": "json",
+            "source": "url",
+            "format": "table",
+            "parser": "backend",
+            "url": "/api/reports/dimensions",
+            "url_options": {"method": "GET", "params": []},
+            "root_selector": "$.agents",
+            "columns": [
+              {"selector": "agentId", "text": "__value", "type": "string"},
+              {"selector": "name", "text": "__text", "type": "string"}
+            ]
+          }
+        }
+      },
+      {
+        "name": "team",
+        "label": "Equipo",
+        "type": "query",
+        "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+        "refresh": 1,
+        "includeAll": true,
+        "multi": false,
+        "allValue": "__all__",
+        "current": {"selected": true, "text": "Todos", "value": ""},
+        "query": {
+          "queryType": "infinity",
+          "infinityQuery": {
+            "refId": "A",
+            "type": "json",
+            "source": "url",
+            "format": "table",
+            "parser": "backend",
+            "url": "/api/reports/dimensions",
+            "url_options": {"method": "GET", "params": []},
+            "root_selector": "$.teams",
+            "columns": [
+              {"selector": "teamId", "text": "__value", "type": "string"},
+              {"selector": "name", "text": "__text", "type": "string"}
+            ]
+          }
+        }
+      },
+      {
+        "name": "service",
+        "label": "Servicio",
+        "type": "query",
+        "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+        "refresh": 1,
+        "includeAll": true,
+        "multi": false,
+        "allValue": "__all__",
+        "current": {"selected": true, "text": "Todos", "value": ""},
+        "query": {
+          "queryType": "infinity",
+          "infinityQuery": {
+            "refId": "A",
+            "type": "json",
+            "source": "url",
+            "format": "table",
+            "parser": "backend",
+            "url": "/api/reports/dimensions",
+            "url_options": {"method": "GET", "params": []},
+            "root_selector": "$.services",
+            "columns": [
+              {"selector": "serviceId", "text": "__value", "type": "string"},
+              {"selector": "host", "text": "__text", "type": "string"}
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 1,
+      "type": "row",
+      "title": "Resumen",
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 0},
+      "collapsed": false,
+      "panels": []
+    },
+    {
+      "id": 10,
+      "type": "stat",
+      "title": "Servicios totales",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 5, "w": 4, "x": 0, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "colorMode": "value"},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/summary?agentId=${agent}&teamId=${team}",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": [{"selector": "metric", "text": "metric", "type": "string"}, {"selector": "value", "text": "value", "type": "number"}]
+        }
+      ],
+      "transformations": [
+        {"id": "filterByValue", "options": {"type": "include", "match": "any", "filters": [{"fieldName": "metric", "config": {"id": "equal", "options": {"value": "totalServices"}}}]}},
+        {"id": "organize", "options": {"excludeByName": {"metric": true}, "renameByName": {"value": "Servicios"}}}
+      ]
+    },
+    {
+      "id": 11,
+      "type": "stat",
+      "title": "Críticos abiertos",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 5, "w": 4, "x": 4, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "colorMode": "value"},
+      "fieldConfig": {"defaults": {"thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 1}]}}},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/summary?agentId=${agent}&teamId=${team}",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": [{"selector": "metric", "text": "metric", "type": "string"}, {"selector": "value", "text": "value", "type": "number"}]
+        }
+      ],
+      "transformations": [
+        {"id": "filterByValue", "options": {"type": "include", "match": "any", "filters": [{"fieldName": "metric", "config": {"id": "equal", "options": {"value": "criticalOpen"}}}]}},
+        {"id": "organize", "options": {"excludeByName": {"metric": true}, "renameByName": {"value": "Críticos"}}}
+      ]
+    },
+    {
+      "id": 12,
+      "type": "stat",
+      "title": "Vencidos (SLA)",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 5, "w": 4, "x": 8, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "colorMode": "value"},
+      "fieldConfig": {"defaults": {"thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "orange", "value": 1}]}}},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/summary?agentId=${agent}&teamId=${team}",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": [{"selector": "metric", "text": "metric", "type": "string"}, {"selector": "value", "text": "value", "type": "number"}]
+        }
+      ],
+      "transformations": [
+        {"id": "filterByValue", "options": {"type": "include", "match": "any", "filters": [{"fieldName": "metric", "config": {"id": "equal", "options": {"value": "overdue"}}}]}},
+        {"id": "organize", "options": {"excludeByName": {"metric": true}, "renameByName": {"value": "Vencidos"}}}
+      ]
+    },
+    {
+      "id": 13,
+      "type": "stat",
+      "title": "Sin owner",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 5, "w": 4, "x": 12, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "colorMode": "value"},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/summary?agentId=${agent}&teamId=${team}",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": [{"selector": "metric", "text": "metric", "type": "string"}, {"selector": "value", "text": "value", "type": "number"}]
+        }
+      ],
+      "transformations": [
+        {"id": "filterByValue", "options": {"type": "include", "match": "any", "filters": [{"fieldName": "metric", "config": {"id": "equal", "options": {"value": "unassigned"}}}]}},
+        {"id": "organize", "options": {"excludeByName": {"metric": true}, "renameByName": {"value": "Sin owner"}}}
+      ]
+    },
+    {
+      "id": 14,
+      "type": "stat",
+      "title": "Certificados <30d",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 5, "w": 4, "x": 16, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "colorMode": "value"},
+      "fieldConfig": {"defaults": {"thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "yellow", "value": 1}]}}},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/summary",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": [{"selector": "metric", "text": "metric", "type": "string"}, {"selector": "value", "text": "value", "type": "number"}]
+        }
+      ],
+      "transformations": [
+        {"id": "filterByValue", "options": {"type": "include", "match": "any", "filters": [{"fieldName": "metric", "config": {"id": "equal", "options": {"value": "certsExpiring30d"}}}]}},
+        {"id": "organize", "options": {"excludeByName": {"metric": true}, "renameByName": {"value": "Por vencer"}}}
+      ]
+    },
+    {
+      "id": 15,
+      "type": "stat",
+      "title": "Score promedio",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 5, "w": 4, "x": 20, "y": 1},
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "colorMode": "value"},
+      "fieldConfig": {"defaults": {"unit": "none", "min": 0, "max": 100, "thresholds": {"mode": "absolute", "steps": [{"color": "red", "value": null}, {"color": "orange", "value": 50}, {"color": "yellow", "value": 70}, {"color": "green", "value": 90}]}}},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/summary?agentId=${agent}&teamId=${team}",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": [{"selector": "metric", "text": "metric", "type": "string"}, {"selector": "value", "text": "value", "type": "number"}]
+        }
+      ],
+      "transformations": [
+        {"id": "filterByValue", "options": {"type": "include", "match": "any", "filters": [{"fieldName": "metric", "config": {"id": "equal", "options": {"value": "avgScore"}}}]}},
+        {"id": "organize", "options": {"excludeByName": {"metric": true}, "renameByName": {"value": "Score"}}}
+      ]
+    },
+    {
+      "id": 20,
+      "type": "timeseries",
+      "title": "Evolución del score TLS",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 6},
+      "fieldConfig": {"defaults": {"custom": {"fillOpacity": 10, "lineWidth": 2, "showPoints": "never"}, "min": 0, "max": 100, "unit": "none"}, "overrides": []},
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}, "tooltip": {"mode": "multi"}},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/score-history?bucket=day&agentId=${agent}&serviceId=${service}&teamId=${team}",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": [
+            {"selector": "ts", "text": "time", "type": "timestamp"},
+            {"selector": "avgScore", "text": "Score promedio", "type": "number"},
+            {"selector": "minScore", "text": "Score mínimo", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "type": "timeseries",
+      "title": "Issues abiertos por severidad",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 6},
+      "fieldConfig": {"defaults": {"custom": {"fillOpacity": 30, "lineWidth": 1, "stacking": {"mode": "normal"}, "showPoints": "never"}, "unit": "short"}, "overrides": []},
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}, "tooltip": {"mode": "multi"}},
+      "targets": [
+        {"refId": "A", "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"}, "type": "json", "source": "url", "format": "table", "parser": "backend", "url": "/api/reports/issues-trend?bucket=day&severity=critical&agentId=${agent}&serviceId=${service}&teamId=${team}", "url_options": {"method": "GET", "params": []}, "root_selector": "", "columns": [{"selector": "ts", "text": "time", "type": "timestamp"}, {"selector": "openAtEnd", "text": "openAtEnd", "type": "number"}]},
+        {"refId": "B", "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"}, "type": "json", "source": "url", "format": "table", "parser": "backend", "url": "/api/reports/issues-trend?bucket=day&severity=high&agentId=${agent}&serviceId=${service}&teamId=${team}", "url_options": {"method": "GET", "params": []}, "root_selector": "", "columns": [{"selector": "ts", "text": "time", "type": "timestamp"}, {"selector": "openAtEnd", "text": "openAtEnd", "type": "number"}]},
+        {"refId": "C", "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"}, "type": "json", "source": "url", "format": "table", "parser": "backend", "url": "/api/reports/issues-trend?bucket=day&severity=medium&agentId=${agent}&serviceId=${service}&teamId=${team}", "url_options": {"method": "GET", "params": []}, "root_selector": "", "columns": [{"selector": "ts", "text": "time", "type": "timestamp"}, {"selector": "openAtEnd", "text": "openAtEnd", "type": "number"}]},
+        {"refId": "D", "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"}, "type": "json", "source": "url", "format": "table", "parser": "backend", "url": "/api/reports/issues-trend?bucket=day&severity=low&agentId=${agent}&serviceId=${service}&teamId=${team}", "url_options": {"method": "GET", "params": []}, "root_selector": "", "columns": [{"selector": "ts", "text": "time", "type": "timestamp"}, {"selector": "openAtEnd", "text": "openAtEnd", "type": "number"}]},
+        {"refId": "E", "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"}, "type": "json", "source": "url", "format": "table", "parser": "backend", "url": "/api/reports/issues-trend?bucket=day&severity=info&agentId=${agent}&serviceId=${service}&teamId=${team}", "url_options": {"method": "GET", "params": []}, "root_selector": "", "columns": [{"selector": "ts", "text": "time", "type": "timestamp"}, {"selector": "openAtEnd", "text": "openAtEnd", "type": "number"}]}
+      ],
+      "overrides": [
+        {"matcher": {"id": "byFrameRefID", "options": "A"}, "properties": [{"id": "displayName", "value": "Crítico"}, {"id": "color", "value": {"mode": "fixed", "fixedColor": "red"}}]},
+        {"matcher": {"id": "byFrameRefID", "options": "B"}, "properties": [{"id": "displayName", "value": "Alto"}, {"id": "color", "value": {"mode": "fixed", "fixedColor": "orange"}}]},
+        {"matcher": {"id": "byFrameRefID", "options": "C"}, "properties": [{"id": "displayName", "value": "Medio"}, {"id": "color", "value": {"mode": "fixed", "fixedColor": "yellow"}}]},
+        {"matcher": {"id": "byFrameRefID", "options": "D"}, "properties": [{"id": "displayName", "value": "Bajo"}, {"id": "color", "value": {"mode": "fixed", "fixedColor": "green"}}]},
+        {"matcher": {"id": "byFrameRefID", "options": "E"}, "properties": [{"id": "displayName", "value": "Info"}, {"id": "color", "value": {"mode": "fixed", "fixedColor": "blue"}}]}
+      ]
+    },
+    {
+      "id": 40,
+      "type": "barchart",
+      "title": "Certificados por vencimiento",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 7, "w": 8, "x": 0, "y": 14},
+      "options": {"orientation": "horizontal", "xTickLabelRotation": 0, "showValue": "auto"},
+      "fieldConfig": {"defaults": {"custom": {"lineWidth": 1, "fillOpacity": 70}}},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/certificates-by-expiry",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": [
+            {"selector": "bucket", "text": "bucket", "type": "string"},
+            {"selector": "count", "text": "Cantidad", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "type": "table",
+      "title": "Issues abiertos por responsable",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 7, "w": 8, "x": 8, "y": 14},
+      "options": {"showHeader": true, "cellHeight": "sm"},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/issues-by-owner?agentId=${agent}&serviceId=${service}&teamId=${team}",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": []
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "type": "table",
+      "title": "Issues por estado",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 7, "w": 8, "x": 16, "y": 14},
+      "options": {"showHeader": true, "cellHeight": "sm"},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/issues-by-status?agentId=${agent}&serviceId=${service}&teamId=${team}",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": []
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "type": "timeseries",
+      "title": "Shadow IT vs. inventariado",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 21},
+      "fieldConfig": {"defaults": {"custom": {"fillOpacity": 20, "lineWidth": 2, "showPoints": "never"}, "unit": "short"}, "overrides": []},
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}, "tooltip": {"mode": "multi"}},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/shadow-it-trend?bucket=day&agentId=${agent}",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": [
+            {"selector": "ts", "text": "time", "type": "timestamp"},
+            {"selector": "shadowIt", "text": "Shadow IT", "type": "number"},
+            {"selector": "inventoried", "text": "Inventariado", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "type": "table",
+      "title": "Estado de agentes on-premise",
+      "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 21},
+      "options": {"showHeader": true, "cellHeight": "sm"},
+      "fieldConfig": {"defaults": {}, "overrides": [
+        {"matcher": {"id": "byName", "options": "online"}, "properties": [{"id": "custom.cellOptions", "value": {"type": "color-background", "mode": "basic"}}, {"id": "mappings", "value": [{"type": "value", "options": {"true": {"color": "green", "index": 1}, "false": {"color": "red", "index": 0}}}]}]}
+      ]},
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {"type": "yesoreyeram-infinity-datasource", "uid": "cryptoguard-infinity"},
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "/api/reports/agents-status",
+          "url_options": {"method": "GET", "params": []},
+          "root_selector": "",
+          "columns": []
+        }
+      ]
+    }
+  ]
+}

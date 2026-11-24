@@ -1,0 +1,1453 @@
+{
+  "train": [
+    {
+      "id": "cryptoapi:cryptoapi-row-101",
+      "group": "0",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-104",
+      "group": "1",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-105",
+      "group": "1",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-106",
+      "group": "1",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-107",
+      "group": "1",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-108",
+      "group": "1",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-135",
+      "group": "6",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-139",
+      "group": "8",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-140",
+      "group": "8",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-141",
+      "group": "8",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-142",
+      "group": "8",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-156",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-159",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-160",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-161",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-162",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-163",
+      "group": "13",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-181",
+      "group": "22",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-182",
+      "group": "23",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-183",
+      "group": "23",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-184",
+      "group": "23",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-185",
+      "group": "23",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-57",
+      "group": "35",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-60",
+      "group": "36",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-79",
+      "group": "42",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00020",
+      "group": "51",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00035",
+      "group": "52",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00050",
+      "group": "53",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00057",
+      "group": "58",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00058",
+      "group": "59",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00059",
+      "group": "60",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00119",
+      "group": "61",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00120",
+      "group": "62",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00121",
+      "group": "63",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00122",
+      "group": "64",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00126",
+      "group": "68",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00127",
+      "group": "69",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00128",
+      "group": "70",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00208",
+      "group": "73",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00209",
+      "group": "74",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00210",
+      "group": "75",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00211",
+      "group": "76",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00214",
+      "group": "79",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00254",
+      "group": "80",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00257",
+      "group": "83",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00351",
+      "group": "89",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00352",
+      "group": "90",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00354",
+      "group": "92",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00355",
+      "group": "93",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00356",
+      "group": "94",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00357",
+      "group": "95",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00445",
+      "group": "99",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00446",
+      "group": "100",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00447",
+      "group": "101",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00448",
+      "group": "102",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00449",
+      "group": "103",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00451",
+      "group": "105",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00521",
+      "group": "106",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00524",
+      "group": "109",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00609",
+      "group": "111",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00610",
+      "group": "112",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00612",
+      "group": "114",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00613",
+      "group": "115",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00616",
+      "group": "118",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00684",
+      "group": "121",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00688",
+      "group": "125",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00689",
+      "group": "126",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00690",
+      "group": "127",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00692",
+      "group": "129",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00777",
+      "group": "133",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00778",
+      "group": "134",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00779",
+      "group": "135",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00780",
+      "group": "136",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00782",
+      "group": "138",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00853",
+      "group": "139",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00854",
+      "group": "140",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00855",
+      "group": "141",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00858",
+      "group": "144",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00859",
+      "group": "145",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00942",
+      "group": "146",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00944",
+      "group": "148",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00945",
+      "group": "149",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00946",
+      "group": "150",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01015",
+      "group": "151",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01016",
+      "group": "152",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01017",
+      "group": "153",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01019",
+      "group": "155",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01020",
+      "group": "156",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01021",
+      "group": "157",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01022",
+      "group": "158",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01099",
+      "group": "159",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01100",
+      "group": "160",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01101",
+      "group": "161",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01102",
+      "group": "162",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01106",
+      "group": "166",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01108",
+      "group": "168",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01147",
+      "group": "169",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01149",
+      "group": "171",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01151",
+      "group": "173",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01227",
+      "group": "177",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01228",
+      "group": "178",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01229",
+      "group": "179",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01230",
+      "group": "180",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01317",
+      "group": "181",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01318",
+      "group": "182",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01324",
+      "group": "188",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01325",
+      "group": "189",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01398",
+      "group": "190",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01400",
+      "group": "192",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01480",
+      "group": "194",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01481",
+      "group": "195",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01482",
+      "group": "196",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01483",
+      "group": "197",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01484",
+      "group": "198",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01485",
+      "group": "199",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01486",
+      "group": "200",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01488",
+      "group": "202",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01563",
+      "group": "204",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01565",
+      "group": "206",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01567",
+      "group": "208",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01635",
+      "group": "210",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01636",
+      "group": "211",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01638",
+      "group": "213",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01640",
+      "group": "215",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01738",
+      "group": "218",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01739",
+      "group": "219",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01742",
+      "group": "222",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01822",
+      "group": "223",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01824",
+      "group": "225",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01825",
+      "group": "226",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01826",
+      "group": "227",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01830",
+      "group": "231",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01895",
+      "group": "232",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01898",
+      "group": "235",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01899",
+      "group": "236",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01900",
+      "group": "237",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01901",
+      "group": "238",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01977",
+      "group": "241",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01978",
+      "group": "242",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01980",
+      "group": "244",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01981",
+      "group": "245",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01982",
+      "group": "246",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02017",
+      "group": "247",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02018",
+      "group": "248",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02021",
+      "group": "251",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02023",
+      "group": "253",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02024",
+      "group": "254",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02101",
+      "group": "255",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02102",
+      "group": "256",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02190",
+      "group": "258",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02191",
+      "group": "259",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02192",
+      "group": "260",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02289",
+      "group": "264",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02290",
+      "group": "265",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02291",
+      "group": "266",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02292",
+      "group": "267",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02294",
+      "group": "269",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02296",
+      "group": "271",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02297",
+      "group": "272",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02298",
+      "group": "273",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02371",
+      "group": "274",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02373",
+      "group": "276",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02374",
+      "group": "277",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02459",
+      "group": "280",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02460",
+      "group": "281",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02461",
+      "group": "282",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02547",
+      "group": "283",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02658",
+      "group": "289",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02659",
+      "group": "290",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02661",
+      "group": "292",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02662",
+      "group": "293",
+      "label": 0
+    }
+  ],
+  "validation": [
+    {
+      "id": "cryptoapi:cryptoapi-row-178",
+      "group": "20",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-61",
+      "group": "37",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-62",
+      "group": "37",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-63",
+      "group": "37",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-64",
+      "group": "37",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-83",
+      "group": "44",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-84",
+      "group": "44",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-85",
+      "group": "44",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-86",
+      "group": "44",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00054",
+      "group": "55",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00056",
+      "group": "57",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00124",
+      "group": "66",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00125",
+      "group": "67",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00130",
+      "group": "72",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00213",
+      "group": "78",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00255",
+      "group": "81",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00256",
+      "group": "82",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00259",
+      "group": "85",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00350",
+      "group": "88",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00358",
+      "group": "96",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00443",
+      "group": "97",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00608",
+      "group": "110",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00617",
+      "group": "119",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00618",
+      "group": "120",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00687",
+      "group": "124",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00775",
+      "group": "131",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00776",
+      "group": "132",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00781",
+      "group": "137",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00943",
+      "group": "147",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01018",
+      "group": "154",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01107",
+      "group": "167",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01152",
+      "group": "174",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01320",
+      "group": "184",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01321",
+      "group": "185",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01322",
+      "group": "186",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01399",
+      "group": "191",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01401",
+      "group": "193",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01487",
+      "group": "201",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01489",
+      "group": "203",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01639",
+      "group": "214",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01641",
+      "group": "216",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01737",
+      "group": "217",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01740",
+      "group": "220",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01741",
+      "group": "221",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01823",
+      "group": "224",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01827",
+      "group": "228",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01828",
+      "group": "229",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01976",
+      "group": "240",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02019",
+      "group": "249",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02020",
+      "group": "250",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02103",
+      "group": "257",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02194",
+      "group": "262",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02295",
+      "group": "270",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02372",
+      "group": "275",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02458",
+      "group": "279",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02548",
+      "group": "284",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02552",
+      "group": "288",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02660",
+      "group": "291",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02663",
+      "group": "294",
+      "label": 1
+    }
+  ],
+  "test": [
+    {
+      "id": "cryptoapi:cryptoapi-row-138",
+      "group": "7",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-18",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-21",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-22",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-23",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-24",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-25",
+      "group": "21",
+      "label": 1
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-33",
+      "group": "21",
+      "label": 0
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-82",
+      "group": "43",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00005",
+      "group": "49",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00019",
+      "group": "50",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00053",
+      "group": "54",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00055",
+      "group": "56",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00123",
+      "group": "65",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00129",
+      "group": "71",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00212",
+      "group": "77",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00258",
+      "group": "84",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00260",
+      "group": "86",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00345",
+      "group": "87",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00353",
+      "group": "91",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00444",
+      "group": "98",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00450",
+      "group": "104",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00522",
+      "group": "107",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00523",
+      "group": "108",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00611",
+      "group": "113",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00614",
+      "group": "116",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00615",
+      "group": "117",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00685",
+      "group": "122",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00686",
+      "group": "123",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00691",
+      "group": "128",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00693",
+      "group": "130",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00856",
+      "group": "142",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00857",
+      "group": "143",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01103",
+      "group": "163",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01104",
+      "group": "164",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01105",
+      "group": "165",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01148",
+      "group": "170",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01150",
+      "group": "172",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01153",
+      "group": "175",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01226",
+      "group": "176",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01319",
+      "group": "183",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01323",
+      "group": "187",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01564",
+      "group": "205",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01566",
+      "group": "207",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01634",
+      "group": "209",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01637",
+      "group": "212",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01829",
+      "group": "230",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01896",
+      "group": "233",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01897",
+      "group": "234",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01975",
+      "group": "239",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01979",
+      "group": "243",
+      "label": 0
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02022",
+      "group": "252",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02193",
+      "group": "261",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02195",
+      "group": "263",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02293",
+      "group": "268",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02375",
+      "group": "278",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02549",
+      "group": "285",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02550",
+      "group": "286",
+      "label": 1
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02551",
+      "group": "287",
+      "label": 0
+    }
+  ]
+}

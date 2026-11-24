@@ -1,0 +1,36 @@
+# syntax=docker/dockerfile:1
+FROM python:3.13-slim AS base
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+WORKDIR /app
+
+# curl se usa como fallback del handshake; ca-certificates para NVD/HTTPS.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    curl \
+    && rm -rf /var/lib/apt/lists/* \
+    && groupadd --gid 10001 cryptoguard \
+    && useradd --uid 10001 --gid cryptoguard --no-create-home \
+       --shell /usr/sbin/nologin cryptoguard
+
+COPY pyproject.toml README.md alembic.ini ./
+COPY migrations ./migrations
+COPY src ./src
+COPY deploy/backend-entrypoint.sh /usr/local/bin/cryptoguard-entrypoint
+
+# sslyze aporta OpenSSL con cifrados legacy para detectar SSLv3/RC4/3DES.
+RUN pip install --no-cache-dir ".[server,sslyze]" \
+    && chmod 0755 /usr/local/bin/cryptoguard-entrypoint
+
+USER 10001:10001
+
+EXPOSE 8000
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \
+    CMD ["python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+
+ENTRYPOINT ["cryptoguard-entrypoint"]

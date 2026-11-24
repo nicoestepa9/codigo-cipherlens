@@ -1,0 +1,48 @@
+{
+  "source": "https://github.com/CryptoAPI-Bench/CryptoAPI-Bench",
+  "revision": "e6b6b50fef6970151300c1ac2de62e188ba6de19",
+  "samples": 177,
+  "labels": {
+    "1": 142,
+    "0": 35
+  },
+  "categories": {
+    "dummycertvalidation": 3,
+    "staticsalts": 9,
+    "ecbcrypto": 7,
+    "staticinitializationvector": 10,
+    "pbeiteration": 9,
+    "brokencrypto": 36,
+    "brokenhash": 29,
+    "credentialinstring": 6,
+    "predictablecryptographickey": 9,
+    "predictablepbepassword": 11,
+    "predictablekeystorepassword": 10,
+    "impropersslsocketfactory": 1,
+    "predictableseeds": 16,
+    "http": 8,
+    "insecureasymmetriccrypto": 6,
+    "untrustedprng": 2,
+    "brokenmac": 3,
+    "dummyhostnameverifier": 2
+  },
+  "groups": 125,
+  "skipped": [
+    {
+      "row": 4,
+      "names": "CredentialInStringBBCase2.java",
+      "reason": "source_not_found"
+    },
+    {
+      "row": 176,
+      "names": "PredictableSeedsABPMCase2.java\nPredictableSeedsABPM2.java",
+      "reason": "source_not_found"
+    }
+  ],
+  "labelSource": "CryptoAPI-Bench_details.xlsx column D",
+  "limitations": [
+    "Academic synthetic benchmark; not production validation",
+    "Binary labels across benchmark categories, not per-vulnerability localization",
+    "Skeleton grouping reduces but cannot eliminate semantic similarity"
+  ]
+}

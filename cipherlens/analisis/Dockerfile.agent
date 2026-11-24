@@ -1,0 +1,30 @@
+# syntax=docker/dockerfile:1
+FROM python:3.13-slim AS base
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    CRYPTOGUARD_AGENT_STATE_DIR=/var/lib/cryptoguard-agent
+
+WORKDIR /app
+
+# Dependencias del sistema minimas
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copiar codigo + metadata
+COPY pyproject.toml README.md ./
+COPY src ./src
+
+# Instalar con extras agent + sslyze
+RUN pip install --no-cache-dir ".[agent,sslyze]"
+
+# Directorio de estado y config
+RUN mkdir -p /var/lib/cryptoguard-agent /etc/cryptoguard-agent \
+    && chown -R 1000:1000 /var/lib/cryptoguard-agent
+
+VOLUME ["/var/lib/cryptoguard-agent", "/etc/cryptoguard-agent"]
+USER 1000:1000
+
+ENTRYPOINT ["cryptoguard-agent"]
+CMD ["run", "--config", "/etc/cryptoguard-agent/agent.yaml", "--allow-insecure-localhost"]

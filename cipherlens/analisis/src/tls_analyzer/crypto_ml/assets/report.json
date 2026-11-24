@@ -1,0 +1,555 @@
+{
+  "seed": 42,
+  "sklearnVersion": "1.9.1",
+  "split": "first fold StratifiedGroupKFold(n_splits=4, shuffle=True, random_state=42)",
+  "model": "TF-IDF word unigrams/bigrams + balanced logistic regression; fixed parameters",
+  "testUsedForTuning": false,
+  "train": {
+    "size": 132,
+    "metrics": {
+      "classificationReport": {
+        "no_misuse_in_benchmark": {
+          "precision": 0.6764705882352942,
+          "recall": 0.8846153846153846,
+          "f1-score": 0.7666666666666667,
+          "support": 26.0
+        },
+        "misuse": {
+          "precision": 0.9693877551020408,
+          "recall": 0.8962264150943396,
+          "f1-score": 0.9313725490196079,
+          "support": 106.0
+        },
+        "accuracy": 0.8939393939393939,
+        "macro avg": {
+          "precision": 0.8229291716686675,
+          "recall": 0.8904208998548622,
+          "f1-score": 0.8490196078431373,
+          "support": 132.0
+        },
+        "weighted avg": {
+          "precision": 0.9116919495070755,
+          "recall": 0.8939393939393939,
+          "f1-score": 0.8989304812834226,
+          "support": 132.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          23,
+          3
+        ],
+        [
+          11,
+          95
+        ]
+      ],
+      "balancedAccuracy": 0.8904208998548622
+    }
+  },
+  "test": {
+    "size": 45,
+    "metrics": {
+      "classificationReport": {
+        "no_misuse_in_benchmark": {
+          "precision": 0.6153846153846154,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.7272727272727273,
+          "support": 9.0
+        },
+        "misuse": {
+          "precision": 0.96875,
+          "recall": 0.8611111111111112,
+          "f1-score": 0.9117647058823529,
+          "support": 36.0
+        },
+        "accuracy": 0.8666666666666667,
+        "macro avg": {
+          "precision": 0.7920673076923077,
+          "recall": 0.875,
+          "f1-score": 0.8195187165775402,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.8980769230769231,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.8748663101604278,
+          "support": 45.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          8,
+          1
+        ],
+        [
+          5,
+          31
+        ]
+      ],
+      "balancedAccuracy": 0.875
+    },
+    "predictions": [
+      {
+        "id": "cryptoapi-row-102",
+        "category": "staticinitializationvector",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6393465425241819
+      },
+      {
+        "id": "cryptoapi-row-109",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6490668311019626
+      },
+      {
+        "id": "cryptoapi-row-110",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6490668311019626
+      },
+      {
+        "id": "cryptoapi-row-111",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6490668311019626
+      },
+      {
+        "id": "cryptoapi-row-112",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6490668311019626
+      },
+      {
+        "id": "cryptoapi-row-114",
+        "category": "credentialinstring",
+        "actual": 1,
+        "predicted": 0,
+        "score": 0.4858530194398368
+      },
+      {
+        "id": "cryptoapi-row-119",
+        "category": "predictablekeystorepassword",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.5896014397241355
+      },
+      {
+        "id": "cryptoapi-row-131",
+        "category": "http",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.7399095570413257
+      },
+      {
+        "id": "cryptoapi-row-137",
+        "category": "pbeiteration",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6761701976968574
+      },
+      {
+        "id": "cryptoapi-row-144",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.7504801964384864
+      },
+      {
+        "id": "cryptoapi-row-145",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.7504801964384864
+      },
+      {
+        "id": "cryptoapi-row-146",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.7504801964384864
+      },
+      {
+        "id": "cryptoapi-row-147",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.7504801964384864
+      },
+      {
+        "id": "cryptoapi-row-15",
+        "category": "predictableseeds",
+        "actual": 1,
+        "predicted": 0,
+        "score": 0.49796994189657307
+      },
+      {
+        "id": "cryptoapi-row-156",
+        "category": "ecbcrypto",
+        "actual": 0,
+        "predicted": 0,
+        "score": 0.4468952550441806
+      },
+      {
+        "id": "cryptoapi-row-159",
+        "category": "brokencrypto",
+        "actual": 0,
+        "predicted": 0,
+        "score": 0.46557905982710834
+      },
+      {
+        "id": "cryptoapi-row-160",
+        "category": "brokencrypto",
+        "actual": 0,
+        "predicted": 0,
+        "score": 0.4587636169841023
+      },
+      {
+        "id": "cryptoapi-row-161",
+        "category": "brokencrypto",
+        "actual": 0,
+        "predicted": 0,
+        "score": 0.4587636169841023
+      },
+      {
+        "id": "cryptoapi-row-162",
+        "category": "brokencrypto",
+        "actual": 0,
+        "predicted": 0,
+        "score": 0.4587636169841023
+      },
+      {
+        "id": "cryptoapi-row-163",
+        "category": "brokencrypto",
+        "actual": 0,
+        "predicted": 0,
+        "score": 0.4587636169841023
+      },
+      {
+        "id": "cryptoapi-row-170",
+        "category": "predictablecryptographickey",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6550570901826273
+      },
+      {
+        "id": "cryptoapi-row-171",
+        "category": "credentialinstring",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.5828622389833401
+      },
+      {
+        "id": "cryptoapi-row-174",
+        "category": "http",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.5686025082824747
+      },
+      {
+        "id": "cryptoapi-row-187",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6473088305504985
+      },
+      {
+        "id": "cryptoapi-row-188",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6473088305504985
+      },
+      {
+        "id": "cryptoapi-row-189",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6473088305504985
+      },
+      {
+        "id": "cryptoapi-row-190",
+        "category": "brokenhash",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6473088305504985
+      },
+      {
+        "id": "cryptoapi-row-20",
+        "category": "pbeiteration",
+        "actual": 1,
+        "predicted": 0,
+        "score": 0.4021079887227149
+      },
+      {
+        "id": "cryptoapi-row-38",
+        "category": "pbeiteration",
+        "actual": 0,
+        "predicted": 0,
+        "score": 0.3723118360019696
+      },
+      {
+        "id": "cryptoapi-row-41",
+        "category": "predictablepbepassword",
+        "actual": 0,
+        "predicted": 0,
+        "score": 0.4781745890416668
+      },
+      {
+        "id": "cryptoapi-row-42",
+        "category": "predictableseeds",
+        "actual": 0,
+        "predicted": 1,
+        "score": 0.5207199583533889
+      },
+      {
+        "id": "cryptoapi-row-5",
+        "category": "predictablepbepassword",
+        "actual": 1,
+        "predicted": 0,
+        "score": 0.4442690058160726
+      },
+      {
+        "id": "cryptoapi-row-50",
+        "category": "credentialinstring",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6068528827904847
+      },
+      {
+        "id": "cryptoapi-row-51",
+        "category": "predictablepbepassword",
+        "actual": 1,
+        "predicted": 0,
+        "score": 0.47906225605309266
+      },
+      {
+        "id": "cryptoapi-row-52",
+        "category": "predictablekeystorepassword",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.5448365157068683
+      },
+      {
+        "id": "cryptoapi-row-53",
+        "category": "http",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.5947360361266769
+      },
+      {
+        "id": "cryptoapi-row-55",
+        "category": "predictableseeds",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.5898601209601704
+      },
+      {
+        "id": "cryptoapi-row-56",
+        "category": "staticsalts",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.5644850111814819
+      },
+      {
+        "id": "cryptoapi-row-58",
+        "category": "staticinitializationvector",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6192544804167225
+      },
+      {
+        "id": "cryptoapi-row-60",
+        "category": "brokencrypto",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.715903944323011
+      },
+      {
+        "id": "cryptoapi-row-65",
+        "category": "insecureasymmetriccrypto",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6244870971113102
+      },
+      {
+        "id": "cryptoapi-row-71",
+        "category": "predictablecryptographickey",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.7009103627194609
+      },
+      {
+        "id": "cryptoapi-row-78",
+        "category": "staticsalts",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.5531818882371917
+      },
+      {
+        "id": "cryptoapi-row-96",
+        "category": "predictablekeystorepassword",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.579148685965374
+      },
+      {
+        "id": "cryptoapi-row-98",
+        "category": "predictableseeds",
+        "actual": 1,
+        "predicted": 1,
+        "score": 0.6283758944220984
+      }
+    ],
+    "byCategory": {
+      "brokencrypto": {
+        "size": 6,
+        "correct": 6
+      },
+      "brokenhash": {
+        "size": 12,
+        "correct": 12
+      },
+      "credentialinstring": {
+        "size": 3,
+        "correct": 2
+      },
+      "ecbcrypto": {
+        "size": 1,
+        "correct": 1
+      },
+      "http": {
+        "size": 3,
+        "correct": 3
+      },
+      "insecureasymmetriccrypto": {
+        "size": 1,
+        "correct": 1
+      },
+      "pbeiteration": {
+        "size": 3,
+        "correct": 2
+      },
+      "predictablecryptographickey": {
+        "size": 2,
+        "correct": 2
+      },
+      "predictablekeystorepassword": {
+        "size": 3,
+        "correct": 3
+      },
+      "predictablepbepassword": {
+        "size": 3,
+        "correct": 1
+      },
+      "predictableseeds": {
+        "size": 4,
+        "correct": 2
+      },
+      "staticinitializationvector": {
+        "size": 2,
+        "correct": 2
+      },
+      "staticsalts": {
+        "size": 2,
+        "correct": 2
+      }
+    }
+  },
+  "baselines": {
+    "majority": {
+      "classificationReport": {
+        "no_misuse_in_benchmark": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 9.0
+        },
+        "misuse": {
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1-score": 0.8888888888888888,
+          "support": 36.0
+        },
+        "accuracy": 0.8,
+        "macro avg": {
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1-score": 0.4444444444444444,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.64,
+          "recall": 0.8,
+          "f1-score": 0.7111111111111111,
+          "support": 45.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          36
+        ]
+      ],
+      "balancedAccuracy": 0.5
+    },
+    "literal_patterns": {
+      "classificationReport": {
+        "no_misuse_in_benchmark": {
+          "precision": 0.2,
+          "recall": 0.7777777777777778,
+          "f1-score": 0.3181818181818182,
+          "support": 9.0
+        },
+        "misuse": {
+          "precision": 0.8,
+          "recall": 0.2222222222222222,
+          "f1-score": 0.34782608695652173,
+          "support": 36.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1-score": 0.3330039525691699,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.68,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.341897233201581,
+          "support": 45.0
+        }
+      },
+      "confusionMatrix": [
+        [
+          7,
+          2
+        ],
+        [
+          28,
+          8
+        ]
+      ],
+      "balancedAccuracy": 0.5
+    }
+  },
+  "limitations": [
+    "Small, imbalanced academic benchmark",
+    "No independent real-world validation",
+    "No dataflow/control-flow resolution; false positives and negatives expected",
+    "Binary score is not calibrated vulnerability probability",
+    "Test results do not imply TLS rule accuracy or full AES/RSA coverage"
+  ],
+  "datasetSha256": "05a5a9197aa93240f07a9ac10b21c9083c7ec11598b9543a7be5151815916c93",
+  "confusionMatrixOrder": "rows=actual, columns=predicted; class order [0, 1] => [[TN, FP], [FN, TP]]"
+}

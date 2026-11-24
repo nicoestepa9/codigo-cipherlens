@@ -1,0 +1,17 @@
+{
+  "version": "rsa-policy-v1",
+  "provenance": "Project-authored parameter examples for supervised policy reproduction; not a public real-world benchmark",
+  "task": "Classify whether a declared RSA size meets the configured 2048-bit minimum; does not establish complete RSA security",
+  "policyMinimum": 2048,
+  "domain": [512, 16384],
+  "labelMeaning": {"0": "meets_size_minimum", "1": "below_size_minimum"},
+  "train": [[512,1],[768,1],[1024,1],[1536,1],[1984,1],[2047,1],[2048,0],[2112,0],[2560,0],[3072,0],[4096,0],[7680,0],[8192,0],[15360,0],[16384,0]],
+  "validation": [[640,1],[960,1],[1280,1],[1792,1],[2046,1],[2049,0],[2176,0],[3584,0],[6144,0],[12288,0]],
+  "test": [[576,1],[704,1],[896,1],[1152,1],[1408,1],[1920,1],[2040,1],[2050,0],[2304,0],[2816,0],[5120,0],[10240,0]],
+  "limitations": [
+    "Labels explicitly authored against a simple size policy; learning this boundary is not a novel vulnerability detector",
+    "Boundary examples 2047 and 2048 are intentionally taught in train; test measures reproduction at different declared values",
+    "Declared sizes are parameter inputs, not proof a provider will accept or generate a key of that size",
+    "Do not combine these metrics with independent public-code benchmark metrics"
+  ]
+}

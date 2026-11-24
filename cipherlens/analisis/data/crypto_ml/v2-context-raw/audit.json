@@ -1,0 +1,1034 @@
+{
+  "definition": {
+    "cipher_policy": "Potential symmetric cipher misuse under the source benchmark policy (weak algorithms or ECB); not full AES security",
+    "rsa_key_size": "Potential insufficient asymmetric key size under CryptoAPI-Bench labels; not padding detection"
+  },
+  "sourceHashes": {
+    "rocco\\analisis\\data\\crypto_ml\\dataset.jsonl": "05a5a9197aa93240f07a9ac10b21c9083c7ec11598b9543a7be5151815916c93",
+    "rocco\\analisis\\data\\crypto_ml\\owasp-external-v1\\dataset.jsonl": "8ad2adfc85861d4517ab77e2922cf1bae9a8e08a147809b469af038c47bd6c20"
+  },
+  "taskCounts": {
+    "cipher_policy": {
+      "rows": 42,
+      "labels": {
+        "1": 31,
+        "0": 11
+      },
+      "groups": 11
+    },
+    "rsa_key_size": {
+      "rows": 5,
+      "labels": {
+        "1": 4,
+        "0": 1
+      },
+      "groups": 4
+    }
+  },
+  "excluded": [
+    {
+      "id": "cryptoapi:cryptoapi-row-105",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-106",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-107",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-108",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-79",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-83",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-84",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-85",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-86",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "cryptoapi:cryptoapi-row-87",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00035",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00050",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00055",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00056",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00057",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00119",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00120",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00121",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00122",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00123",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00124",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00125",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00126",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00127",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00128",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00129",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00130",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00208",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00210",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00211",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00212",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00213",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00214",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00254",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00255",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00256",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00257",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00258",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00259",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00260",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00345",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00350",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00351",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00352",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00353",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00354",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00355",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00356",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00357",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00358",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00443",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00444",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00445",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00446",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00447",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00448",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00449",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00450",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00451",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00521",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00522",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00523",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00524",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00608",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00609",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00610",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00611",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00612",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00613",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00614",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00615",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00616",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00617",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00618",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00684",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00685",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00686",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00687",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00688",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00689",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00690",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00691",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00692",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00693",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00775",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00776",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00777",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00778",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00779",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00780",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00781",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00782",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00853",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00854",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00855",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00856",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00857",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00858",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00859",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00942",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00943",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00944",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00945",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest00946",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01015",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01016",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01017",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01018",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01019",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01020",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01021",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01022",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01099",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01100",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01101",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01102",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01103",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01104",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01105",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01106",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01107",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01108",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01147",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01148",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01149",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01150",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01151",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01152",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01153",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01226",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01227",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01228",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01229",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01230",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01317",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01318",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01319",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01320",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01321",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01322",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01323",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01324",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01325",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01398",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01399",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01400",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01401",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01480",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01481",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01482",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01483",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01484",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01485",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01486",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01487",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01488",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01489",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01563",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01564",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01565",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01566",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01567",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01634",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01635",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01636",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01637",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01638",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01639",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01640",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01641",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01737",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01738",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01739",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01740",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01741",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01742",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01822",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01823",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01824",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01825",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01826",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01827",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01828",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01829",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01830",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01895",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01896",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01897",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01898",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01899",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01900",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01901",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01975",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01976",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01977",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01978",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01979",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01980",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01981",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest01982",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02017",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02018",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02019",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02020",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02021",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02022",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02023",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02024",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02101",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02102",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02103",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02190",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02191",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02192",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02193",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02194",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02195",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02289",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02290",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02291",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02292",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02293",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02294",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02295",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02296",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02297",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02298",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02371",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02372",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02373",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02374",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02375",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02458",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02459",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02460",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02461",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02547",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02548",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02549",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02550",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02551",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02552",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02658",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02659",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02660",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02661",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02662",
+      "reason": "duplicate_context"
+    },
+    {
+      "id": "owasp_observed:BenchmarkTest02663",
+      "reason": "duplicate_context"
+    }
+  ],
+  "ccaIncluded": false,
+  "owaspRole": "Observed development source; cannot claim independent external validation",
+  "limitations": [
+    "Lexical extraction does not resolve control flow",
+    "Conflicts after extraction are excluded and reported, reducing coverage",
+    "Derived OWASP samples retain GPL-2.0 source licensing"
+  ],
+  "rawSourcesUsed": {
+    "cryptoapi": true,
+    "owasp": true
+  },
+  "grouping": "Connected components of original skeleton, extracted skeleton, exact context, and observable feature vector"
+}

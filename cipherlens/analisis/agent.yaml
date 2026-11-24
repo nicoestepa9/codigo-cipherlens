@@ -1,0 +1,23 @@
+server_url: http://127.0.0.1:8000
+site_label: Sede de prueba
+upload_level: standard
+pseudonymize: internal
+max_concurrent: 2
+allow_insecure_localhost: true
+# Remote work is opt-in and disabled by default. Empty lists reject all tasks.
+allow_remote_tasks: false
+allowed_networks: []
+allowed_ports: []
+max_task_hosts: 1024
+max_task_ports: 32
+poll_seconds: 15
+
+targets:
+  - host: github.com
+    port: 443
+    profile: citizen-facing
+    interval_hours: 0
+  - host: cloudflare.com
+    port: 443
+    profile: citizen-facing
+    interval_hours: 0
